@@ -3,17 +3,14 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  background: #010523;      
-  color: #f5f5f5;            
+  background: #010523;                
   line-height: 1.6;
 }
 
-/* Section Layout */
 .awards-section {
   padding: 60px 10%;
 }
 
-/* Section Header */
 .section-header {
   text-align: center;
   margin-bottom: 50px;
@@ -22,7 +19,7 @@ body {
 .section-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #feb164;           
+  color: #ffffff;          
 }
 
 .section-intro {
@@ -32,27 +29,17 @@ body {
   color: #ffffff;            
 }
 
-/* Subtitles */
-.sub-title {
-  font-size: 1.6rem;
-  margin: 40px 0 20px;
-  color: #feb164;            
-  font-weight: 600;
-  border-left: 4px solid #e6b07b;
-  padding-left: 10px;
-}
-
 /* Co-subtitle */
 .sub-title {
   display: inline-block;                  
   background: linear-gradient(135deg, #010523, #041069); 
-  color: #feb164;                         
-  font-size: 1.8rem;                      
+  color: #ffffff;                         
+  font-size: 1.6rem;                      
   font-weight: 700;
-  padding: 14px 24px;                     
+  padding: 10px 20px;                     
   border-radius: 14px;                    
-  border-left: 6px solid #feb164;        
-  box-shadow: 0 6px 20px rgba(0,0,0,0.5), 0 0 15px rgba(3, 1, 99, 0.3); 
+  border-left: 6px solid #B3CFE5;  
+  box-shadow: 0 6px 15px #1A3D63, 0 0 15px #1A3D63; 
   margin: 60px 0 50px;                    
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -68,48 +55,48 @@ body {
 }
 
 .achievement-card {
-  background: rgba(49, 54, 116, 0.85);
-  color: #f5f5f5;
+  background: linear-gradient( #0A1931, #4a7fa7);
   padding: 20px 25px;
   border-radius: 16px;
   backdrop-filter: blur(12px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
   flex: 1 1 300px; /* responsive card width */
   max-width: 350px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(243, 153, 64, 0.7);
+  border: 1px solid #4a7fa7;
 }
 
 .achievement-card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.5);
-  border-color: #feb164;
+  box-shadow: 0 12px 28px #0a285a;
+  border-color: #0A1931;
 }
-
 
 .achievement-card .year {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #feb164;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .achievement-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   margin-bottom: 10px;
   color: #ffffff;
 }
 
 .achievement-card p {
   font-size: 0.95rem;
-  color: #d3d4de;
+  color: #c7e7ff;   
   margin-bottom: 12px;
+  text-align: justify;
 }
 
-.achievement-card .issuer {
-  font-size: 0.85rem;
-  color: #ffffff;
-  display: block;
+.achievement-card h3,
+.achievement-card p {
+  word-spacing: -1px;      
+  letter-spacing: -0.5px;  
+  line-height: 1.4;        /* control line spacing */
+  white-space: normal;      /* allow wrapping normally */
 }
 
 
@@ -123,40 +110,48 @@ body {
 }
 
 .co-card {
-  background: rgba(49, 54, 116, 0.85);
-  color: #f5f5f5;
+  background: linear-gradient( #0A1931, #4a7fa7);
   padding: 20px 25px;
   border-radius: 16px;
   backdrop-filter: blur(12px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  flex: 1 1 300px; /* responsive card width */
+  flex: 1 1 300px;
   max-width: 350px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .co-card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+  box-shadow:  0 12px 28px #0a285a;
 }
 
 .co-card .year {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #feb164;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .co-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #ffffff;   
 }
 
 .co-card p {
   font-size: 0.95rem;
-  color: #d3d4de;
+  color: #c7e7ff;   
   margin-bottom: 0;
+  text-align: justify;
 }
+
+.co-card h3,
+.co-card p {
+  word-spacing: -1px;      
+  letter-spacing: -0.5px;  
+  line-height: 1.4;        /* control line spacing */
+  white-space: normal;      /* allow wrapping normally */
+}
+
 
 
 /* ================ Certificates ================ */
@@ -168,7 +163,7 @@ body {
 }
 
 .cert-card {
-  background: rgba(49, 54, 116, 0.85);
+  background: linear-gradient( #0A1931, #4a7fa7);
   padding: 15px 10px;
   border-radius: 16px;
   text-align: center;
@@ -237,5 +232,3 @@ body {
   margin-right: 8px;
   font-size: 1.1rem;
 }
-
-
