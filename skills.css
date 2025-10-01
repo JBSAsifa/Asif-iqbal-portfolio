@@ -1,3 +1,12 @@
+/* Global */
+body {
+  font-family: "Inter", sans-serif;
+  background: #010523;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Section */
 .skills-section {
   background: #010523; 
@@ -5,9 +14,10 @@
   border-radius: 12px;
   margin: 50px auto;
   max-width: 1000px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
+/* Main Heading */
 .skills-section h1 {
   text-align: center;
   font-size: 2.4rem;
@@ -15,17 +25,25 @@
   color: #ffffff; 
   margin-bottom: 40px;
   letter-spacing: 1px;
-  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6); /
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
 }
 
-
-
-.skills-section h3 {
+/* Subtitles */
+.skills-section h3,
+.section-title {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
   color: #feb164; 
   margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+/* Intro text */
+.section-intro {
+  color: #ffffff; 
+  text-align: center;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
@@ -42,12 +60,13 @@
   background-color: rgba(49, 54, 116, 0.85);
   border: 2px solid #c09fcd;
   padding: 10px 22px;
-  border-radius: 50px;
+  border-radius: 20px;
   font-weight: 600;
   font-size: 0.95rem;
   color: #fff;
   transition: all 0.3s ease;
   cursor: pointer;
+  text-align: center;
 }
 
 .skills-grid span:hover {
@@ -57,6 +76,7 @@
   transform: scale(1.05);
 }
 
+/* Tooltip */
 .tooltip {
   position: relative;
 }
@@ -87,6 +107,45 @@
   opacity: 1;
 }
 
+/* Custom Blocks */
+.sub-title {
+  background: linear-gradient(135deg, #010523, #041069); 
+  color: #feb164;            
+  border-left: 4px solid #e6b07b;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5), 
+              0 0 15px rgba(3, 1, 99, 0.3); 
+  padding: 10px 15px;
+}
+
+.card {
+  background: rgba(49, 54, 116, 0.85);
+  color: #f5f5f5;
+  border: 1px solid rgba(243, 153, 64, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+  border-color: #feb164;
+}
+
+.verify-link {
+  background: linear-gradient(135deg, #010523, #041069);
+  color: #feb164;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.verify-link:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #041069, #313674);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .skills-section {
     padding: 40px 15px;
