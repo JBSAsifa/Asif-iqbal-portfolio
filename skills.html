@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="skills.css">
-    <title>skills</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Slideshow</title>
+  <link rel="stylesheet" href="skills.css">
 </head>
 <body>
-    <section class="skills-section">
-  <h1 class="section-title">Skills</h1>
-  <h3 class="section-title">Language</h3>
-  <div class="skills-grid">
+  <section class="skills-section">
+    <h1 class="section-title">Skills</h1>
 
-<span class="tooltip" data-desc="C is a foundational system programming language.&#10;C++ builds on C with OOP, making it ideal for software and algorithms.">C, C++</span>
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
 
-<span class="tooltip" data-desc="A versatile language widely used in AI, ML, and web apps.&#10;Known for readability and a huge ecosystem of libraries.">Python</span>
+      <!-- Slide 1 -->
+      <div class="slide fade">
+        <h3 class="sub-title">Languages</h3>
+        <div class="skills-grid">
+          <span class="tooltip" data-desc="C is a foundational system programming language. C++ builds on C with OOP.">C, C++</span>
+          <span class="tooltip" data-desc="A versatile language widely used in AI, ML, and web apps. Known for readability and a huge ecosystem of libraries.">Python</span>
+          <span class="tooltip" data-desc="A Unix shell and command language. Great for scripting, automation, and DevOps workflows.">Bash</span>
+          <span class="tooltip" data-desc="A relational database management system. Used for efficient structured data storage and queries.">MySQL</span>
+          <span class="tooltip" data-desc="The core scripting language of the web. Runs in browsers and on servers via Node.js.">JavaScript</span>
+          <span class="tooltip" data-desc="An object-oriented, platform-independent language. Common in enterprise systems and Android apps.">Java</span>
+          <span class="tooltip" data-desc="A hardware description language. Used for modeling and simulating digital circuits.">Verilog HDL</span>
+        </div>
+      </div>
 
-<span class="tooltip" data-desc="A Unix shell and command language.&#10;Great for scripting, automation, and DevOps workflows.">Bash</span>
+      <!-- Slide 2 -->
+      <div class="slide fade">
+        <h3 class="sub-title">Libraries</h3>
+        <div class="skills-grid">
+          <span class="tooltip" data-desc="For natural language processing. Includes tokenization, parsing, and semantic analysis.">NLTK</span>
+          <span class="tooltip" data-desc="A Python library for classical machine learning. Supports regression, classification, and clustering.">Scikit-learn</span>
+          <span class="tooltip" data-desc="Efficient NLP library for topic modeling. Great for semantic analysis and word embeddings.">Gensim</span>
+          <span class="tooltip" data-desc="A data analysis and manipulation library. Ideal for tabular and time series data.">Pandas</span>
+          <span class="tooltip" data-desc="A fundamental library for numerical computing. Supports arrays, linear algebra, and scientific math.">NumPy</span>
+          <span class="tooltip" data-desc="A comprehensive plotting library. Creates static, interactive, and animated visualizations.">Matplotlib</span>
+          <span class="tooltip" data-desc="A statistical data visualization library. Simplifies plots with a clean, high-level API.">Seaborn</span>
+          <span class="tooltip" data-desc="A deep learning framework by Google. Used for neural networks and large-scale ML.">TensorFlow</span>
+          <span class="tooltip" data-desc="A flexible deep learning library. Favored in AI research for dynamic computation.">PyTorch</span>
+          <span class="tooltip" data-desc="A platform for containerized applications. Ensures consistent environments across systems.">Docker</span>
+          <span class="tooltip" data-desc="A container orchestration system. Automates deployment, scaling, and management.">Kubernetes</span>
+          <span class="tooltip" data-desc="An open-source ML lifecycle tool. Helps track experiments, models, and deployments.">MLflow</span>
+        </div>
+      </div>
 
-<span class="tooltip" data-desc="A relational database management system.&#10;Used for efficient structured data storage and queries.">MySQL</span>
+      <!-- Slide 3 -->
+      <div class="slide fade">
+        <h3 class="sub-title">Frameworks</h3>
+        <div class="skills-grid">
+          <span class="tooltip" data-desc="An interactive notebook environment. Great for coding, visualization, and data analysis.">Jupyter</span>
+          <span class="tooltip" data-desc="A distributed version control system. Enables collaboration, branching, and code tracking.">Git</span>
+          <span class="tooltip" data-desc="A high-quality document preparation system. Commonly used for research papers and technical writing.">LaTeX</span>
+        </div>
+      </div>
 
-<span class="tooltip" data-desc="The core scripting language of the web.&#10;Runs in browsers and on servers via Node.js.">JavaScript</span>
+      <!-- Navigation -->
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
 
-<span class="tooltip" data-desc="An object-oriented, platform-independent language.&#10;Common in enterprise systems and Android apps.">Java</span>
+    <!-- Dots -->
+    <div class="dots-container"></div>
+  </section>
 
-<span class="tooltip" data-desc="A hardware description language.&#10;Used for modeling and simulating digital circuits.">Verilog HDL</span>
+  <!-- Single tooltip container (no duplicates) -->
+  <div id="tooltip-box" class="tooltip-box"></div>
 
-  </div>
-
-  <h3 class="section-title">Libraries </h3>
-  <div class="skills-grid">
-   <span class="tooltip" data-desc="A toolkit for natural language processing.&#10;Includes tokenization, parsing, and semantic analysis.">NLTK</span>
-
-<span class="tooltip" data-desc="A Python library for classical machine learning.&#10;Supports regression, classification, and clustering.">Scikit-learn</span>
-
-<span class="tooltip" data-desc="Efficient NLP library for topic modeling.&#10;Great for semantic analysis and word embeddings.">Gensim</span>
-
-<span class="tooltip" data-desc="A data analysis and manipulation library.&#10;Ideal for tabular and time series data.">Pandas</span>
-
-<span class="tooltip" data-desc="A fundamental library for numerical computing.&#10;Supports arrays, linear algebra, and scientific math.">NumPy</span>
-
-<span class="tooltip" data-desc="A comprehensive plotting library.&#10;Creates static, interactive, and animated visualizations.">Matplotlib</span>
-
-<span class="tooltip" data-desc="A statistical data visualization library.&#10;Simplifies plots with a clean, high-level API.">Seaborn</span>
-
-<span class="tooltip" data-desc="A deep learning framework by Google.&#10;Used for neural networks and large-scale ML.">TensorFlow</span>
-
-<span class="tooltip" data-desc="A flexible deep learning library.&#10;Favored in AI research for dynamic computation.">PyTorch</span>
-
-<span class="tooltip" data-desc="A platform for containerized applications.&#10;Ensures consistent environments across systems.">Docker</span>
-
-<span class="tooltip" data-desc="A container orchestration system.&#10;Automates deployment, scaling, and management.">Kubernetes</span>
-
-<span class="tooltip" data-desc="An open-source ML lifecycle tool.&#10;Helps track experiments, models, and deployments.">MLflow</span>
-
-  </div>
-
-  <h3 class="section-title">Frameworks</h3>
-  <div class="skills-grid">
-    <span class="tooltip" data-desc="An interactive notebook environment.&#10;Great for coding, visualization, and data analysis.">Jupyter</span>
-
-<span class="tooltip" data-desc="A distributed version control system.&#10;Enables collaboration, branching, and code tracking.">Git</span>
-
-<span class="tooltip" data-desc="A high-quality document preparation system.&#10;Commonly used for research papers and technical writing.">LaTeX</span>
-
-  </div>
-</section>
+  <script src="skills.js"></script>
 </body>
 </html>

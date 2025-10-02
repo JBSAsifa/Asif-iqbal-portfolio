@@ -1,186 +1,195 @@
 /* Global */
 body {
   font-family: "Inter", sans-serif;
-  background: #010523;  
+  background: #010523;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  color: #fff;
 }
 
 /* Section */
 .skills-section {
-  background: #010523; 
-  padding: 60px 40px;
-  border-radius: 12px;
-  margin: 50px auto;
   max-width: 1000px;
-  overflow-x: hidden;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Main Heading */
-.skills-section h1 {
-  text-align: center;
+/* Headings */
+/* Headings */
+.section-title {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #ffffff; 
-  margin-bottom: 40px;
-  letter-spacing: 1px;
-  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+  margin: 0 0 35px 0;     /* more bottom space */
+  padding-top: 10px;      /* little breathing space at top */
+  color: #feb164;
+  text-shadow: 0 0 10px rgba(255, 193, 112, 0.7);
+  letter-spacing: 1px;    /* spacing between letters */
 }
 
-/* Subtitles */
-.skills-section h3,
-.section-title {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #feb164; 
-  margin-top: 35px;
-  margin-bottom: 20px;
+.sub-title {
+  font-size: 1.6rem;
+  margin: 5px 0 40px 0;   /* smaller top space, keep bottom spacing */
+  color: #feb164;
+  background: linear-gradient(135deg, #010523, #041069);
+  display: inline-block;
+  padding: 10px 18px;
+  border-left: 4px solid #c09fcd;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
 }
 
-/* Intro text */
-.section-intro {
-  color: #ffffff; 
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 20px;
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid rgba(192, 159, 205, 0.6);
+  padding: 20px;
+  background: rgba(49, 54, 116, 0.3);
 }
 
-/* Grid */
+/* Slides */
+.slide {
+  display: none;
+  animation: fade 1s ease-in-out;
+  padding: 15px 0;          /* gives breathing space inside slides */
+}
+@keyframes fade {
+  from { opacity: 0.4; }
+  to   { opacity: 1; }
+}
+
+/* Skills grid */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
   justify-content: center;
-  margin-top: 20px;
+  gap: 12px;
 }
-
 .skills-grid span {
-  background-color: rgba(49, 54, 116, 0.85);
-  border: 2px solid #c09fcd;
-  padding: 10px 22px;
+  background: rgba(49, 54, 116, 0.85);
+  padding: 12px 22px;
   border-radius: 20px;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #fff;
-  transition: all 0.3s ease;
+  border: 1px solid #c09fcd;
   cursor: pointer;
-  text-align: center;
+  transition: 0.3s ease;
 }
-
 .skills-grid span:hover {
-  background-color: #c09fcd;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: #c09fcd;
+  color: #010523;
   transform: scale(1.05);
+  box-shadow: 0 0 12px #c09fcd;
 }
 
-/* Tooltip */
+/* Tooltip (JS-driven only) */
 .tooltip {
   position: relative;
+  display: inline-block;
 }
 
-.tooltip::after {
-  content: attr(data-desc);
-  position: absolute;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(49, 54, 116, 0.85); 
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  line-height: 1.3rem;
-  white-space: pre-line;
+/* Remove old ::after tooltip system */
+.tooltip::after { 
+  display: none !important;
+  content: none !important;
+}
+
+/* Floating tooltip box */
+
+.tooltip-box {
+  position: fixed;
+  background: linear-gradient(135deg, #004d40, #00695c);
+  color: #e0f7fa;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 420px;
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  width: max-content;
-  max-width: 240px;
-  text-align: center;
-  z-index: 10;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
+  text-align: left;
+  pointer-events: auto;  /* 🔥 allow clicks inside */
+  box-shadow: 0 8px 24px rgba(0, 255, 213, 0.25);
 }
 
-.tooltip:hover::after {
+/* When visible (POP-UP effect) */
+.tooltip-box.show {
   opacity: 1;
+  pointer-events: auto;
+  background: linear-gradient(135deg, #1a6275, #627c63); /* cyan → neon green */
+  color: #012b28;
+  font-weight: 600;
+  transform: scale(1.05); /* small zoom pop */
+  box-shadow: 0 0 30px rgba(0, 201, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-/* Custom Blocks */
-.sub-title {
-  background: linear-gradient(135deg, #010523, #041069); 
-  color: #feb164;            
-  border-left: 4px solid #e6b07b;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.5), 
-              0 0 15px rgba(3, 1, 99, 0.3); 
-  padding: 10px 15px;
+.tooltip-box.clicked {
+  background: #fff !important;
+  color: #111 !important;
+  border: 1px solid #ccc;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
-
-.card {
-  background: rgba(49, 54, 116, 0.85);
-  color: #f5f5f5;
-  border: 1px solid rgba(243, 153, 64, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0 12px 28px rgba(0,0,0,0.5);
-  border-color: #feb164;
-}
-
-.verify-link {
-  background: linear-gradient(135deg, #010523, #041069);
+/* Navigation arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  padding: 12px;
   color: #feb164;
-  padding: 10px 15px;
-  border-radius: 6px;
-  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
   transition: 0.3s;
+  border-radius: 50%;
+  user-select: none;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+.prev:hover, .next:hover {
+  background: rgba(192, 159, 205, 0.7);
+  color: #fff;
 }
 
-.verify-link:hover {
-  color: #fff;
-  background: linear-gradient(135deg, #041069, #313674);
+/* Dots */
+.dots-container {
+  text-align: center;
+  margin-top: 15px;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background: #555;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.active, .dot:hover {
+  background: #feb164;
+  box-shadow: 0 0 6px #feb164;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .skills-section {
-    padding: 40px 15px;
-    margin: 30px 10px;
-  }
-  .skills-section h1 {
-    font-size: 2rem;
-  }
-  .skills-section h3 {
-    font-size: 1.2rem;
-  }
-  .skills-grid {
-    gap: 10px;
-  }
-  .skills-grid span {
-    font-size: 0.85rem;
-    padding: 8px 15px;
-  }
+  .section-title { font-size: 1.8rem; }
+  .sub-title { font-size: 1.2rem; }
+  .skills-grid span { font-size: 0.85rem; padding: 10px 16px; }
+  .prev, .next { font-size: 1.5rem; top: 50%; }
 }
 
 @media (max-width: 480px) {
-  .skills-section {
-    padding: 30px 12px;
-    margin: 20px 8px;
-  }
-  .skills-section h1 {
-    font-size: 1.8rem;
-  }
-  .skills-section h3 {
-    font-size: 1.1rem;
-  }
-  .skills-grid span {
-    font-size: 0.8rem;
-    padding: 7px 12px;
-  }
-}
-
+  .section-title { font-size: 1.6rem; }
+  .sub-title { font-size: 1rem; }
+  .skills-grid { gap: 8px; }
+  .skills-grid span { font-size: 0.75rem; padding: 8px 12px; }
+  .prev, .next { font-size: 1.2rem; }
+  .tooltip-box { max-width: 90vw; font-size: 0.9rem; }
 }
