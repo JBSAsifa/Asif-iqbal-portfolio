@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>My Portfolio</title>
+    <style>
+      body {
+        background-color: #081d46; /* Dark Blue Background */
+        color: #ddd;
+        font-family: Arial, sans-serif;
+      }
+      .left-img {
+        height: 100vh;
+        object-fit: cover;
+        width: 100%;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+      }
+      .portfolio-text h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #f8a880;
+      }
+      .portfolio-text p {
+        color: rgb(235, 238, 247);
+        text-align: justify;
+      }
+      .btn-custom {
+        background-color: #f8a880; 
+        color: #081d46;
+        border: none;
+        margin-right: 15px;
+      }
+      .btn-custom:hover {
+        background-color: #ddd;
+        color: #081d46;
+      }
+      .btn-outline-light {
+        border: 2px solid #f8a880;
+        color: #f8a880;
+      }
+      .btn-outline-light:hover {
+        background-color: #f8a880;
+        color: #081d46;
+      }
+      .footer-text {
+        color: white;
+      }
+      /* Education Section */
+      .section-title {
+        color: #f8a880;
+      }
+      .section-intro {
+        color: rgb(235, 238, 247);
+      }
+      .value-card {
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Portfolio Section -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Left Image Section -->
+        <div class="col-md-6 p-0">
+          <img src="/Images/profile.jpg" alt="Portfolio Image" class="left-img">
+        </div>
+
+        <!-- Right Text Section -->
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-start p-5">
+          <div class="portfolio-text">
+            <h1>I'm Asif<br> Iqbal</h1>
+            <p class="mt-3">
+              I am a strong engineering professional with a Bachelor of Science in Computer Science and Engineering from Chittagong University of Engineering and Technology (CUET). I am skilled in Python, C, C++, and SQL, with expertise in Data Science, Data Analysis, NLP, Machine Learning, Deep Learning, and Artificial Intelligence. At CUET NLP Lab, I have worked on major projects involving dataset creation, annotation, and model applications for information extraction. My developed datasets include BEmoD (Bengali Emotion Dataset), BEmoC (Bengali Emotion Corpus), BAD (Bengali Aggression Dataset), and SemSD (Semantic Similarity Dataset). Passionate about coding, I have solved diverse algorithmic problems and re-developed the K-means clustering algorithm for better computation. I also completed a year-long IBM Quantum Computing course and published 10 papers in international conferences and journals. Beyond academics, I actively contributed to IEEE CUET SB and HULT Prize at CUET, serving as Treasurer and committee member.
+            </p>
+            <div class="mt-4">
+             
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+      <div class="container my-5">
+        <h3 class="fw-bold mb-3 section-title">
+          <i class="bi bi-mortarboard"></i> Education
+        </h3>
+        <p class="section-intro mb-4">Here is a summary of my academic background and achievements.</p>
+
+        <div class="row g-4">
+          <!-- High School -->
+          <div class="col-md-6">
+            <div class="value-card" style="background-color: #e0f2fe; color:#0369a1;">
+              <h5><i class="bi bi-book"></i> High School</h5>
+              <p>Govt. Muslim High School<br>
+              SSC, High School/Secondary Diplomas and Certificates.<br>
+              2007 - 2013<br>
+              Grade: A+</p>
+            </div>
+          </div>
+
+          <!-- Bachelor -->
+          <div class="col-md-6">
+            <div class="value-card" style="background-color: #f3e8ff; color:#8b5cf6;">
+              <h5><i class="bi bi-mortarboard-fill"></i> Bachelor’s Degree</h5>
+              <p>Chittagong University of Engineering & Technology<br>
+              B.Sc., COMPUTER SCIENCE & ENGINEERING.<br>
+              2016 - 2020</p>
+            </div>
+          </div>
+
+          <!-- HSC -->
+          <div class="col-md-6">
+            <div class="value-card" style="background-color: #e6f9ee; color:#059669;">
+              <h5><i class="bi bi-journal-text"></i> HSC</h5>
+              <p>Government City College<br>
+              HSC, College/University Preparatory and Advanced High School/Secondary Diploma Program.<br>
+              2013 - 2015<br>
+              Grade: A+</p>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="col-md-6">
+            <div class="value-card" style="background-color: #fff2e6; color:#f97316;">
+              <h5><i class="bi bi-award"></i> Skills</h5>
+              <p>Bangladesh Bharot Digital Service and Employment Training (BDSET)<br>
+              Training of Trainers, Artificial Intelligence<br>
+              Jun 2022 - Jan 2023<br>
+              Skills: Artificial Intelligence (AI) · Machine Learning · Deep Learning · Virtual Reality (VR) · Augmented Reality (AR) · Mixed Reality.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
