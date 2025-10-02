@@ -40,7 +40,7 @@ ScrollReveal().reveal('.cert-card', {
   duration: 1000,
 });
 
-// 🖱️ Hover subtle animation for cert icons (smooth scaling)
+// 🖱 Hover subtle animation for cert icons (smooth scaling)
 document.querySelectorAll('.cert-card').forEach(card => {
   const icon = card.querySelector('.icon-circle');
   card.addEventListener('mouseenter', () => {
@@ -53,4 +53,33 @@ document.querySelectorAll('.cert-card').forEach(card => {
     icon.style.transform = 'scale(1)';
     card.style.transform = 'translateY(0) scale(1)';
   });
+});
+
+const showMoreBtn = document.querySelector('.show-more-btn');
+const moreCards = document.querySelectorAll('.more-card');
+
+showMoreBtn.addEventListener('click', () => {
+  moreCards.forEach(card => {
+    if (card.style.display === "block") {
+      card.style.display = "none";
+    } else {
+      card.style.display = "block";
+    }
+  });
+
+  showMoreBtn.textContent = 
+    showMoreBtn.textContent === "Show More" ? "Show Less" : "Show More";
+});
+
+
+const viewMoreBtn = document.querySelector('.view-more-btn');
+const hiddenCerts = document.querySelectorAll('.cert-item.hidden');
+
+viewMoreBtn.addEventListener('click', () => {
+  hiddenCerts.forEach(cert => {
+    cert.classList.toggle('show');  // toggle show class
+  });
+
+  viewMoreBtn.textContent = 
+    viewMoreBtn.textContent === "View More" ? "View Less" : "View More";
 });
