@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md. Asif Iqbal | Portfolio</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <header class="sticky-header">
+      <nav class="navbar">
+        <div class="logo">
+          <span class="logo-icon">🚀</span>
+          <span class="logo-text">Asif Iqbal</span>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="awards.html" class="nav-link">Awards</a></li>
+          <li>
+            <a href="contact.html" class="nav-link contact-btn">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text fade-in">
+            <div class="greeting">👋 Hello, I'm</div>
+            <h1 class="name-title">Md. Asif Iqbal</h1>
+
+            <!-- Rotating text with modern animation -->
+            <div class="rotating-role">
+              <span class="role-prefix">I'm a </span>
+              <span id="role" class="role-text"></span>
+              <span class="cursor">|</span>
+            </div>
+
+            <p class="sub-tagline">
+              <span class="highlight">Transforming AI research</span> into
+              practical solutions for education, language, and technology.
+            </p>
+
+            <p class="mission">
+              I design intelligent assessment systems and advance AI/NLP
+              research to bridge the gap between education and technology,
+              empowering learners, researchers, and industries with innovative,
+              data-driven solutions.
+            </p>
+
+            <!-- Social Media Icons with animation -->
+            <div class="social-links">
+              <a
+                href="https://github.com/iamasifiqbal"
+                target="_blank"
+                class="social-icon"
+                data-tooltip="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/md-asif-iqbal-9a7b8a176/"
+                target="_blank"
+                class="social-icon"
+                data-tooltip="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.researchgate.net/profile/Asif-Iqbal-44"
+                target="_blank"
+                class="social-icon"
+                data-tooltip="ResearchGate"
+              >
+                <i class="fab fa-researchgate"></i>
+              </a>
+              <a
+                href="https://scholar.google.com/citations?user=pQV9F7IAAAAJ&hl=en"
+                target="_blank"
+                class="social-icon"
+                data-tooltip="Google Scholar"
+              >
+                <i class="fas fa-graduation-cap"></i>
+              </a>
+            </div>
+
+            <!-- Animated Buttons -->
+            <div class="buttons">
+              <a href="projects.html" class="btn btn-primary">
+                <span>View My Research</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="Resume.pdf" class="btn btn-secondary" download>
+                <span>Download CV</span>
+                <i class="fas fa-download"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image fade-in-right">
+            <div class="image-wrapper">
+              <div class="glow-effect"></div>
+             <img src="/Images/profile.jpg" alt="">
+              <div class="floating-icons">
+                <div class="float-icon icon-1">💡</div>
+                <div class="float-icon icon-2">🤖</div>
+                <div class="float-icon icon-3">📊</div>
+                <div class="float-icon icon-4">🎓</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <p>Scroll Down</p>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+      // Typing Animation
+      (function () {
+        const phrases = [
+          "Senior Assessment Developer",
+          "AI/ML Researcher",
+          "NLP Specialist",
+          "Tech Innovator",
+        ];
+        const el = document.getElementById("role");
+        const TYPING_SPEED = 70,
+          DELETING_SPEED = 40,
+          PAUSE_AFTER = 1800;
+        let phraseIndex = 0,
+          charIndex = 0,
+          isDeleting = false;
+
+        function tick() {
+          const current = phrases[phraseIndex];
+          if (!isDeleting) {
+            charIndex++;
+            el.textContent = current.slice(0, charIndex);
+            if (charIndex === current.length) {
+              setTimeout(() => {
+                isDeleting = true;
+                tick();
+              }, PAUSE_AFTER);
+              return;
+            }
+            setTimeout(tick, TYPING_SPEED);
+          } else {
+            charIndex--;
+            el.textContent = current.slice(0, charIndex);
+            if (charIndex === 0) {
+              isDeleting = false;
+              phraseIndex = (phraseIndex + 1) % phrases.length;
+              setTimeout(tick, 200);
+              return;
+            }
+            setTimeout(tick, DELETING_SPEED);
+          }
+        }
+        setTimeout(tick, 800);
+      })();
+
+      // Sticky Header on Scroll
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".sticky-header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // Mobile Menu Toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger) {
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("active");
+          navLinks.classList.toggle("active");
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+          });
+        });
+      }
+
+      // Intersection Observer for Fade-in Animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".fade-in, .fade-in-right").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
