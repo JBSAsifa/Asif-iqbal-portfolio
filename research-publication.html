@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research & Publications</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif; 
+        background:#152b57; 
+        margin:0; 
+        padding:20px;
+    }
+    h1 {
+        text-align:center; 
+        margin-bottom:15px;
+        color: #ddd;
+    }
+    .filters {
+        text-align:center; 
+        margin-bottom:20px;
+    }
+    .filters button {
+        padding:8px 16px; 
+        margin:5px; 
+        border:none; 
+        border-radius:20px; 
+        cursor:pointer; 
+        background:#ddd;
+    }
+    .filters button.active {
+        background:#f8a880; 
+        color:rgb(235, 238, 247);
+    }
+    .grid {
+        display:grid; 
+        grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); 
+        gap:20px;
+    }
+    .card {
+        background:white; 
+        border-radius:8px; 
+        box-shadow:0 2px 6px rgba(0,0,0,0.1); 
+        padding:15px; 
+        transition:transform 0.2s;
+    }
+    .card:hover {
+        transform:translateY(-5px);
+    }
+    .title {
+        font-weight:bold; 
+        margin-bottom:8px; 
+        font-size:16px;
+    }
+    .abstract {
+        font-size:14px; 
+        color:#555; 
+        margin-bottom:10px; 
+        line-height:1.4;
+    }
+    .meta {
+        font-size:13px; 
+        color:#777; 
+        margin-bottom:10px;
+    }
+    .links a {
+        margin-right:10px; 
+        font-size:13px; 
+        text-decoration:none; 
+        color:#f8a880;
+    }
+  </style>
+</head>
+<body>
+  <h1>Research & Publications</h1>
+
+  <div class="filters">
+    <button class="active" onclick="filter('all')">All</button>
+    <button onclick="filter('conference')">Conference Papers</button>
+    <button onclick="filter('journal')">Journal Articles</button>
+    <button onclick="filter('submitted')">Submitted Works</button>
+  </div>
+
+  <div class="grid" id="pubs">
+
+   <div class="card journal">
+       <div class="title">BEmoC: A Corpus for Identifying Emotion in Bengali Texts</div>
+       <div class="abstract">Developed BEmoC corpus of 7000 Bengali texts labeled into six emotions; achieved κ = 0.969 reliability.</div>
+       <div class="meta">Journal | SN Computer Science (2022)</div>
+       <div class="links">
+       <a href="https://doi.org/10.1007/s42979-022-01028-w" target="_blank">PAPER</a>
+  </div>
+</div>
+
+    <!-- Journal -->
+    <div class="card journal">
+      <div class="title">An Improved K-means Clustering Algorithm Towards Efficient Data-Driven Modeling</div>
+      <div class="abstract">Proposed a method for optimal centroid initialization in K-means, tested on COVID-19, patient datasets and synthetic data.</div>
+      <div class="meta">Journal | Springer Nature (2022)</div>
+      <div class="links"><a href="https://www.researchgate.net/publication/361468419_An_Improved_K-means_Clustering_Algorithm_towards_an_Efficient_Data-Driven_Modeling" target="_blank">PAPER</a></div>
+    </div>
+
+    <!-- Conference -->
+    <div class="card conference">
+      <div class="title">TOS: A Relative Metric Approach for Model Selection in Machine Learning Solutions</div>
+      <div class="abstract">Introduced Trade-Off Score (TOS) metric for robust model evaluation on imbalanced datasets.</div>
+      <div class="meta">Conference | IEEE RAAICON 2021</div>
+      <div class="links"><a href="https://doi.org/10.1109/RAAICON54709.2021.9929722" target="_blank">PAPER</a></div>
+    </div>
+
+    <!-- Journal -->
+    <div class="card journal">
+      <div class="title">Word Embedding based Textual Semantic Similarity Measure in Bengali</div>
+      <div class="abstract">Compared Word2Vec, GloVe, FastText embeddings for Bengali similarity tasks; FastText achieved highest correlation (77.28%).</div>
+      <div class="meta">Journal | Procedia Computer Science (2021)</div>
+      <div class="links"><a href="https://www.researchgate.net/publication/356399464_Word_Embedding_based_Textual_Semantic_Similarity_Measure_in_Bengali">PAPER</a></div>
+    </div>
+
+    <!-- Journal -->
+    <div class="card journal">
+      <div class="title">An Efficient K-means Algorithm for Analysing COVID-19</div>
+      <div class="abstract">Applied optimized K-means to cluster healthcare quality of countries during COVID-19.</div>
+      <div class="meta">Journal | HIS 2020</div>
+      <div class="links"><a href="https://doi.org/10.1007/978-3-030-73050-5_43" target="_blank">PAPER</a></div>
+    </div>
+
+    <!-- Conference -->
+    <div class="card conference">
+      <div class="title">Nearest Blood & Plasma Donor Finding: A Machine Learning Approach</div>
+      <div class="abstract">Built clustering-based platform for efficient donor-recipient matching during COVID-19.</div>
+      <div class="meta">Conference | ICCIT 2020</div>
+      <div class="links"><a href="https://doi.org/10.1109/ICCIT51783.2020.9392739">PAPER</a></div>
+    </div>
+
+    <!-- Conference -->
+    <div class="card conference">
+      <div class="title">BEmoD: Bengali Emotion Dataset for Classifying Expressions of Emotion</div>
+      <div class="abstract">Created dataset of 5200 Bengali texts across six emotions; achieved κ=0.92 agreement among annotators.</div>
+      <div class="meta">Conference | ICO 2020</div>
+      <div class="links"><a href="https://doi.org/10.1007/978-3-030-68154-8_94" target="_blank">PAPER</a></div>
+    </div>
+
+    <!-- Conference -->
+    <div class="card conference">
+      <div class="title">Towards POS Tagging Methods for Bengali Language</div>
+      <div class="abstract">Comparative study of stochastic and transformation-based POS tagging methods on Bengali corpus.</div>
+      <div class="meta">Conference | ICO 2020</div>
+      <div class="links"><a href="https://doi.org/10.1007/978-3-030-68154-8_93" target="_blank">PAPER</a></div>
+    </div>
+    <img src="/Images/certificate1.png" alt="">
+
+    <!-- Conference -->
+    <div class="card conference">
+      <div class="title">A Fully Automatic Transport System with LoRa and Renewable Energy Solution</div>
+      <div class="abstract">Proposed robotic vehicle system for automated transport in institutions using LoRa-based communication.</div>
+      <div class="meta">Conference | IEEE Tensymp 2020</div>
+      <div class="links"><a href="https://doi.org/10.1109/TENSYMP50017.2020.9230750">PAPER</a></div>
+    </div>
+
+    <!-- Conference -->
+    <div class="card conference">
+      <div class="title">Airline Scheduling With MAX Flow Algorithm</div>
+      <div class="abstract">Developed algorithm to optimize airline schedules ensuring maximum utilization of flights.</div>
+      <div class="meta">Conference | ICNST 2018</div>
+      <div class="links"><a href="https://www.researchgate.net/publication/331967163_Airline_Scheduling_with_Max_Flow_algorithm">PAPER</a></div>
+    </div>
+
+    <!-- Conference -->
+    <div class="card conference">
+      <div class="title">Classification of Tourism Reviews from Bengali Texts using Multinomial Naïve Bayes</div>
+      <div class="abstract">Performed sentiment analysis of Bengali tourism reviews using Naïve Bayes classifier.</div>
+      <div class="meta">Conference | ICCIT 2022</div>
+      <div class="links"><a href="https://doi.org/10.1109/ICCIT57492.2022.10055560">PAPER</a></div>
+    </div>
+
+  </div>
+
+  <script>
+    function filter(category){
+      let cards=document.querySelectorAll('.card');
+      document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));
+      event.target.classList.add('active');
+      cards.forEach(c=>{
+        if(category==='all' || c.classList.contains(category)){
+          c.style.display='block';
+        } else {
+          c.style.display='none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
