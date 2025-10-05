@@ -1,0 +1,131 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #010523; /* dark navy background */
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.contact-section {
+  width: 80%;
+  max-width: 900px;
+  margin: 160px auto;
+  background: rgba(7, 11, 62, 0.85); /* semi-transparent dark card */
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(192, 159, 205, 0.3);
+}
+
+.contact-info {
+  width: 45%;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #feb164;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  color: #ddd;
+}
+
+.contact-info span {
+  font-weight: bold;
+  color: #feb164;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #feb164;
+  font-size: 20px;
+  margin-right: 12px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f5f5f7;
+  transform: scale(1.2);
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #feb164;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #feb164;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  background: rgba(1, 5, 35, 0.8);
+  color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  background: #feb164;
+  color: #010523;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(254, 177, 100, 0.4);
+}
+
+/* Footer */
+.site-footer {
+  background: #010523; /* same dark navy as navbar */
+  color: #feb164 ;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #010523;
+  font-size: 0.95rem;
+}
+
+.site-footer a {
+  color: #1e1364;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.site-footer a:hover {
+  color: #feb164;
+}

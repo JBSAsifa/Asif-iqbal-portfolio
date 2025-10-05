@@ -4,92 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Asif Iqbal</title>
+  <link rel="stylesheet" href="contacts.css">
+  <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #e0e0e0;
-      margin: 0;
-      padding: 0;
-    }
-    .contact-section {
-      width: 80%;
-      max-width: 900px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 40px;
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .contact-info {
-      width: 45%;
-    }
-    .contact-info h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-    .contact-info p {
-      margin: 8px 0;
-      color: #333;
-    }
-    .contact-info span {
-      font-weight: bold;
-      color: #555;
-    }
-    .social-icons {
-      margin-top: 20px;
-    }
-    .social-icons a {
-      text-decoration: none;
-      color: #000;
-      font-size: 20px;
-      margin-right: 12px;
-      display: inline-block;
-    }
-    .contact-form {
-      width: 50%;
-    }
-    .contact-form label {
-      display: block;
-      font-size: 14px;
-      margin: 10px 0 5px;
-      font-weight: bold;
-      color: #444;
-    }
-    .contact-form input, 
-    .contact-form textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin-bottom: 15px;
-      font-size: 14px;
-      background: #f9f9f9;
-    }
-    .contact-form textarea {
-      height: 120px;
-      resize: none;
-    }
-    .contact-form button {
-      background: #000;
-      color: #fff;
-      padding: 12px;
-      width: 100%;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .contact-form button:hover {
-      background: #444;
-    }
-  </style>
+  
 </head>
-<body>
+<body >
+   <!-- Navbar -->
+    <header class="sticky-header">
+      <nav class="navbar">
+        <div class="logo">
+          <span class="logo-text">Asif Iqbal</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="project.html" class="nav-link">Projects</a></li>
+          <li><a href="research-publication.html" class="nav-link">Research</a></li>
+          <li><a href="certificates-awards.html" class="nav-link">Accomplishments</a></li>
+          <li><a href="contacts.html" class="active nav-link contact-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
   <div class="contact-section">
     <!-- Left Side: Info -->
     <div class="contact-info">
@@ -124,6 +62,17 @@
         <button type="submit">Send Message</button>
       </form>
     </div>
+    
   </div>
+    <footer class="site-footer">
+    <div class="container">
+      <small>©️ <span id="year"></span> Md Asif Iqbal — All rights reserved.</small>
+    </div>
+  </footer>
+  <script>
+    // Update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  
 </body>
 </html>

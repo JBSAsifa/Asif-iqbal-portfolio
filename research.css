@@ -1,0 +1,115 @@
+
+
+/* Body & general layout */
+body {
+    font-family: Arial, sans-serif;
+    background: #152b57;
+    margin: 70px;
+    padding: 20px;
+    color: #ddd;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #f8a880;;
+    font-size: 2.5rem;
+}
+
+
+/* Filters Buttons */
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #ddd;
+    color: #152b57;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.filters button.active,
+.filters button:hover {
+    background: #f8a880;
+    color: rgb(235, 238, 247);
+}
+
+/* Grid for cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Card styling */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.abstract {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.meta {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.links a {
+    margin-right: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #f8a880;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .filters button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+}
+
+.grid .card {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}

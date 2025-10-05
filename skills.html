@@ -1,70 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="skills.css">
-    <title>skills</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Slideshow</title>
+   <link rel="stylesheet" href="home.css">
+
+  <link rel="stylesheet" href="skills.css">
+ 
 </head>
 <body>
-    <section class="skills-section">
-  <h1 class="section-title">Skills</h1>
-  <h3 class="section-title">Language</h3>
-  <div class="skills-grid">
+  <div class="animated-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+   <!-- Sticky Navbar -->
+    <header class="sticky-header">
+      <nav class="navbar">
+        <div class="logo">
+          <span class="logo-text">Asif Iqbal</span>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="skills.html" class="active nav-link">Skills</a></li>
+          <li><a href="project.html" class="nav-link">Projects</a></li>
+          <li><a href="research-publication.html" class="nav-link">Research</a></li>
+          <li><a href="certificates-awards.html" class="nav-link">Accomplishments</a></li>
+          <li>
+            <a href="contacts.html" class="nav-link contact-btn">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<span class="tooltip" data-desc="C is a foundational system programming language.&#10;C++ builds on C with OOP, making it ideal for software and algorithms.">C, C++</span>
+  <section class="skills-section">
+    <h1 class="section-title">Skills</h1>
 
-<span class="tooltip" data-desc="A versatile language widely used in AI, ML, and web apps.&#10;Known for readability and a huge ecosystem of libraries.">Python</span>
+   
+    <div class="slideshow-container">
 
-<span class="tooltip" data-desc="A Unix shell and command language.&#10;Great for scripting, automation, and DevOps workflows.">Bash</span>
+     
+      <div class="slide fade">
+        <h3 class="sub-title">Languages</h3>
+        <div class="skills-grid">
+          <span class="tooltip" data-desc="C is a foundational system programming language. C++ builds on C with OOP.">C, C++</span>
+          <span class="tooltip" data-desc="A versatile language widely used in AI, ML, and web apps. Known for readability and a huge ecosystem of libraries.">Python</span>
+          <span class="tooltip" data-desc="A Unix shell and command language. Great for scripting, automation, and DevOps workflows.">Bash</span>
+          <span class="tooltip" data-desc="A relational database management system. Used for efficient structured data storage and queries.">MySQL</span>
+          <span class="tooltip" data-desc="The core scripting language of the web. Runs in browsers and on servers via Node.js.">JavaScript</span>
+          <span class="tooltip" data-desc="An object-oriented, platform-independent language. Common in enterprise systems and Android apps.">Java</span>
+          <span class="tooltip" data-desc="A hardware description language. Used for modeling and simulating digital circuits.">Verilog HDL</span>
+        </div>
+      </div>
 
-<span class="tooltip" data-desc="A relational database management system.&#10;Used for efficient structured data storage and queries.">MySQL</span>
+      
+      <div class="slide fade">
+        <h3 class="sub-title">Libraries</h3>
+        <div class="skills-grid">
+          <span class="tooltip" data-desc="For natural language processing. Includes tokenization, parsing, and semantic analysis.">NLTK</span>
+          <span class="tooltip" data-desc="A Python library for classical machine learning. Supports regression, classification, and clustering.">Scikit-learn</span>
+          <span class="tooltip" data-desc="Efficient NLP library for topic modeling. Great for semantic analysis and word embeddings.">Gensim</span>
+          <span class="tooltip" data-desc="A data analysis and manipulation library. Ideal for tabular and time series data.">Pandas</span>
+          <span class="tooltip" data-desc="A fundamental library for numerical computing. Supports arrays, linear algebra, and scientific math.">NumPy</span>
+          <span class="tooltip" data-desc="A comprehensive plotting library. Creates static, interactive, and animated visualizations.">Matplotlib</span>
+          <span class="tooltip" data-desc="A statistical data visualization library. Simplifies plots with a clean, high-level API.">Seaborn</span>
+          <span class="tooltip" data-desc="A deep learning framework by Google. Used for neural networks and large-scale ML.">TensorFlow</span>
+          <span class="tooltip" data-desc="A flexible deep learning library. Favored in AI research for dynamic computation.">PyTorch</span>
+          <span class="tooltip" data-desc="A platform for containerized applications. Ensures consistent environments across systems.">Docker</span>
+          <span class="tooltip" data-desc="A container orchestration system. Automates deployment, scaling, and management.">Kubernetes</span>
+          <span class="tooltip" data-desc="An open-source ML lifecycle tool. Helps track experiments, models, and deployments.">MLflow</span>
+        </div>
+      </div>
 
-<span class="tooltip" data-desc="The core scripting language of the web.&#10;Runs in browsers and on servers via Node.js.">JavaScript</span>
+  
+      <div class="slide fade">
+        <h3 class="sub-title">Frameworks</h3>
+        <div class="skills-grid">
+          <span class="tooltip" data-desc="An interactive notebook environment. Great for coding, visualization, and data analysis.">Jupyter</span>
+          <span class="tooltip" data-desc="A distributed version control system. Enables collaboration, branching, and code tracking.">Git</span>
+          <span class="tooltip" data-desc="A high-quality document preparation system. Commonly used for research papers and technical writing.">LaTeX</span>
+        </div>
+      </div>
 
-<span class="tooltip" data-desc="An object-oriented, platform-independent language.&#10;Common in enterprise systems and Android apps.">Java</span>
+   
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
 
-<span class="tooltip" data-desc="A hardware description language.&#10;Used for modeling and simulating digital circuits.">Verilog HDL</span>
+    <!-- Dots -->
+    <div class="dots-container"></div>
+  </section>
 
-  </div>
 
-  <h3 class="section-title">Libraries </h3>
-  <div class="skills-grid">
-   <span class="tooltip" data-desc="A toolkit for natural language processing.&#10;Includes tokenization, parsing, and semantic analysis.">NLTK</span>
+  <div id="tooltip-box" class="tooltip-box"></div>
 
-<span class="tooltip" data-desc="A Python library for classical machine learning.&#10;Supports regression, classification, and clustering.">Scikit-learn</span>
+  <script>
+    let slideIndex = 0;
+let slides = document.getElementsByClassName("slide");
+let dotsContainer = document.querySelector(".dots-container");
+let autoSlide;
+let hideTimeout;
 
-<span class="tooltip" data-desc="Efficient NLP library for topic modeling.&#10;Great for semantic analysis and word embeddings.">Gensim</span>
+// Create dots dynamically
+for (let i = 0; i < slides.length; i++) {
+  let dot = document.createElement("span");
+  dot.classList.add("dot");
+  dot.addEventListener("click", () => showSlide(i));
+  dotsContainer.appendChild(dot);
+}
 
-<span class="tooltip" data-desc="A data analysis and manipulation library.&#10;Ideal for tabular and time series data.">Pandas</span>
+// Show slide function
+function showSlide(n) {
+  if (n >= slides.length) n = 0;
+  if (n < 0) n = slides.length - 1;
+  slideIndex = n;
 
-<span class="tooltip" data-desc="A fundamental library for numerical computing.&#10;Supports arrays, linear algebra, and scientific math.">NumPy</span>
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (let i = 0; i < dotsContainer.children.length; i++) {
+    dotsContainer.children[i].classList.remove("active");
+  }
 
-<span class="tooltip" data-desc="A comprehensive plotting library.&#10;Creates static, interactive, and animated visualizations.">Matplotlib</span>
+  slides[slideIndex].style.display = "block";
+  dotsContainer.children[slideIndex].classList.add("active");
+}
 
-<span class="tooltip" data-desc="A statistical data visualization library.&#10;Simplifies plots with a clean, high-level API.">Seaborn</span>
+// ---------------- TOOLTIP FIX ----------------
 
-<span class="tooltip" data-desc="A deep learning framework by Google.&#10;Used for neural networks and large-scale ML.">TensorFlow</span>
+// Shared tooltip-box (put <div id="tooltip-box"></div> in HTML)
+const tooltipBox = document.getElementById("tooltip-box");
 
-<span class="tooltip" data-desc="A flexible deep learning library.&#10;Favored in AI research for dynamic computation.">PyTorch</span>
+document.querySelectorAll(".tooltip").forEach(el => {
+  el.addEventListener("mouseenter", e => {
+    clearTimeout(hideTimeout);
+    tooltipBox.textContent = el.getAttribute("data-desc");
+    tooltipBox.classList.add("show");
+    tooltipBox.classList.remove("clicked"); // reset pin mode
+    positionTooltip(el);
+  });
 
-<span class="tooltip" data-desc="A platform for containerized applications.&#10;Ensures consistent environments across systems.">Docker</span>
+  el.addEventListener("mousemove", () => {
+    if (tooltipBox.classList.contains("show")) positionTooltip(el);
+  });
 
-<span class="tooltip" data-desc="A container orchestration system.&#10;Automates deployment, scaling, and management.">Kubernetes</span>
+  el.addEventListener("mouseleave", () => {
+    // Hide with delay only if not pinned
+    if (!tooltipBox.classList.contains("clicked")) {
+      hideTimeout = setTimeout(() => {
+        tooltipBox.classList.remove("show");
+      }, 1500);
+    }
+  });
+});
 
-<span class="tooltip" data-desc="An open-source ML lifecycle tool.&#10;Helps track experiments, models, and deployments.">MLflow</span>
+// Positioning function
+function positionTooltip(el) {
+  const rect = el.getBoundingClientRect();
+  let top = rect.bottom + 10;
+  let left = rect.left + rect.width / 2 - tooltipBox.offsetWidth / 2;
 
-  </div>
+  if (top + tooltipBox.offsetHeight > window.innerHeight) {
+    top = rect.top - tooltipBox.offsetHeight - 10;
+  }
+  if (left < 10) left = 10;
+  if (left + tooltipBox.offsetWidth > window.innerWidth - 10) {
+    left = window.innerWidth - tooltipBox.offsetWidth - 10;
+  }
 
-  <h3 class="section-title">Frameworks</h3>
-  <div class="skills-grid">
-    <span class="tooltip" data-desc="An interactive notebook environment.&#10;Great for coding, visualization, and data analysis.">Jupyter</span>
+  tooltipBox.style.top = `${top}px`;
+  tooltipBox.style.left = `${left}px`;
+}
 
-<span class="tooltip" data-desc="A distributed version control system.&#10;Enables collaboration, branching, and code tracking.">Git</span>
+// Keep tooltip visible if clicked (PIN mode)
+tooltipBox.addEventListener("click", (e) => {
+  e.stopPropagation(); // prevent outside click
+  tooltipBox.classList.add("clicked");
+  tooltipBox.classList.add("show");
+});
 
-<span class="tooltip" data-desc="A high-quality document preparation system.&#10;Commonly used for research papers and technical writing.">LaTeX</span>
+// Close tooltip when clicking outside
+document.addEventListener("click", (e) => {
+  if (!tooltipBox.contains(e.target)) {
+    tooltipBox.classList.remove("show");
+    tooltipBox.classList.remove("clicked");
+  }
+});
 
-  </div>
-</section>
+// ---------------- SLIDESHOW CONTROLS ----------------
+document.querySelector(".prev").addEventListener("click", () => {
+  showSlide(slideIndex - 1);
+});
+document.querySelector(".next").addEventListener("click", () => {
+  showSlide(slideIndex + 1);
+});
+
+// Auto slideshow
+function startAutoSlide() {
+  autoSlide = setInterval(() => {
+    showSlide(slideIndex + 1);
+  }, 4000);
+}
+function stopAutoSlide() {
+  clearInterval(autoSlide);
+}
+
+// Start slideshow
+showSlide(slideIndex);
+startAutoSlide();
+
+// Pause on hover
+document.querySelector(".slideshow-container").addEventListener("mouseenter", stopAutoSlide);
+document.querySelector(".slideshow-container").addEventListener("mouseleave", startAutoSlide);
+
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) navbar.classList.add("scrolled");
+  else navbar.classList.remove("scrolled");
+});
+
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>

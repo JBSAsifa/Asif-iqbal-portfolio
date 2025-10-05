@@ -107,7 +107,9 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: transparent;
+  background: rgba(1, 5, 35, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
@@ -126,45 +128,13 @@ body {
   margin: 0 auto;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  cursor: pointer;
-  transition: transform 0.3s ease;
+.logo-img {
+  height: 40px; /* adjust size */
+  width: auto;
 }
 
 .logo:hover {
   transform: scale(1.05);
-}
-
-.logo-icon {
-  font-size: 1.8rem;
-  animation: rocket-bounce 2s ease-in-out infinite;
-}
-
-@keyframes rocket-bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.logo-text {
-  background: linear-gradient(
-    135deg,
-    var(--accent-primary),
-    var(--accent-secondary)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .nav-links {
@@ -626,56 +596,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Floating Icons */
-.floating-icons {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.float-icon {
-  position: absolute;
-  font-size: 2.5rem;
-  animation: float-icon 3s ease-in-out infinite;
-  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
-}
-
-.icon-1 {
-  top: 10%;
-  left: -10%;
-  animation-delay: 0s;
-}
-
-.icon-2 {
-  top: 20%;
-  right: -10%;
-  animation-delay: 0.5s;
-}
-
-.icon-3 {
-  bottom: 20%;
-  left: -5%;
-  animation-delay: 1s;
-}
-
-.icon-4 {
-  bottom: 10%;
-  right: -5%;
-  animation-delay: 1.5s;
-}
-
-@keyframes float-icon {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-20px) rotate(10deg);
-  }
-}
-
 /* Scroll Indicator */
 .scroll-indicator {
   position: absolute;
@@ -699,13 +619,6 @@ body {
   }
 }
 
-.mouse {
-  width: 30px;
-  height: 50px;
-  border: 2px solid var(--accent-primary);
-  border-radius: 15px;
-  position: relative;
-}
 
 .wheel {
   width: 4px;
@@ -1066,3 +979,7 @@ body {
     height: 200px;
   }
 }
+
+
+
+    

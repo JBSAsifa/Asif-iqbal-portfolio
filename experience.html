@@ -4,136 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: #081d46;
-      margin: 0;
-      padding: 30px;
-      color: #ddd;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2.3rem;
-      color: #f8a880;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      text-shadow: 0 2px 8px rgba(248, 168, 128, 0.6);
-    }
-
-    /* Timeline container */
-    .timeline {
-      position: relative;
-      max-width: 900px;
-      margin: auto;
-      padding-left: 20px;
-      border-left: 3px solid rgba(248, 168, 128, 0.6);
-    }
-
-    .timeline-item {
-      position: relative;
-      margin-bottom: 40px;
-      padding-left: 40px;
-      cursor: pointer;
-    }
-
-    /* Glowing dots */
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      left: -13px;
-      top: 10px;
-      width: 20px;
-      height: 20px;
-      background: #f8a880;
-      border-radius: 50%;
-      box-shadow: 0 0 15px rgba(248, 168, 128, 0.9),
-                  0 0 30px rgba(248, 168, 128, 0.6);
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { box-shadow: 0 0 10px rgba(248,168,128,0.7), 0 0 20px rgba(248,168,128,0.4); }
-      50% { box-shadow: 0 0 20px rgba(248,168,128,1), 0 0 40px rgba(248,168,128,0.8); }
-      100% { box-shadow: 0 0 10px rgba(248,168,128,0.7), 0 0 20px rgba(248,168,128,0.4); }
-    }
-
-    .timeline-header {
-      font-size: 18px;
-      font-weight: bold;
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(8px);
-      padding: 14px 18px;
-      border-radius: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: all 0.3s ease;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: #f2f2f2;
-    }
-    .timeline-header:hover {
-      background:  #f8a880;
-      color:#081d46;
-      transform: translateY(-3px);
-    
-    }
-    
-    .timeline-header span {
-      font-size: 14px;
-      font-weight: normal;
-      color: #7c7d7e;
-    }
-
-    .timeline-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.4s ease;
-      background: rgba(255, 255, 255, 0.07);
-      border-radius: 0 0 10px 10px;
-      margin-top: 8px;
-      padding: 0 18px;
-      color: #f2f2f2;
-      border-left: 3px solid #f8a880;
-    }
-
-    .timeline-content.open {
-      padding: 18px;
-      max-height: 600px;
-    }
-
-    .timeline-content ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-    .timeline-content li {
-      margin-bottom: 8px;
-      font-size: 15px;
-    }
-
-    .skills {
-      margin-top: 10px;
-      font-size: 13px;
-      color: #f8a880;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="experience.css">
+  
 </head>
 <body>
+   <div class="animated-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+   <!-- Sticky Navbar -->
+    <header class="sticky-header">
+      <nav class="navbar">
+        <div class="logo">
+          <span class="logo-text">Asif Iqbal</span>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="experience.html" class="active nav-link">Experience</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="project.html" class="nav-link">Projects</a></li>
+          <li><a href="research-publication.html" class="nav-link">Research</a></li>
+          <li><a href="certificates-awards.html" class="nav-link">Accomplishments</a></li>
+          <li>
+            <a href="contacts.html" class="nav-link contact-btn">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <h1>Experience</h1>
+  <div class="experience-container">
+    <h1>Experience</h1>
 
-  <div class="timeline">
-
-    <!-- Workera.ai -->
-    <div class="timeline-item">
-      <div class="timeline-header">
-        Workera.ai | Senior Assessment Developer 
-        <span>(2021 – Present)</span>
-      </div>
-      <div class="timeline-content">
+    <!-- Industry Experience -->
+    <h2 class="sub-title">Industry Experience</h2>
+    <div class="industry-cards">
+      <div class="industry-card">
+        <div class="year">2021 – Present</div>
+        <h3>Workera.ai | Senior Assessment Developer</h3>
         <ul>
           <li>Designed & optimized assessment engine architecture for large-scale AI-powered testing platforms.</li>
           <li>Led cross-functional teams and developed strategic plans aligning frameworks with industry standards.</li>
@@ -141,15 +56,10 @@
         </ul>
         <div class="skills">Skills: Python | ML Frameworks | Assessment Systems</div>
       </div>
-    </div>
 
-    <!-- AI/ML Instructor -->
-    <div class="timeline-item">
-      <div class="timeline-header">
-        AI/ML Instructor | CUET & ITBI 
-        <span>(2024 – Present)</span>
-      </div>
-      <div class="timeline-content">
+      <div class="industry-card">
+        <div class="year">2024 – Present</div>
+        <h3>AI/ML Instructor | CUET & ITBI</h3>
         <ul>
           <li>Designed comprehensive AI/ML courses integrating theory, labs, and best practices.</li>
           <li>Delivered lectures, workshops, and hands-on sessions for students and professionals.</li>
@@ -157,30 +67,20 @@
         </ul>
         <div class="skills">Skills: Instructional Design | AI/ML | Mentorship</div>
       </div>
-    </div>
 
-    <!-- IIT Kharagpur -->
-    <div class="timeline-item">
-      <div class="timeline-header">
-        IIT Kharagpur | Research Intern 
-        <span>(Supervisor: Prof. Debasis Samanta)</span>
-      </div>
-      <div class="timeline-content">
+      <div class="industry-card">
+        <div class="year">IIT Kharagpur</div>
+        <h3>Research Intern (Supervisor: Prof. Debasis Samanta)</h3>
         <ul>
           <li>Worked on advanced NLP projects including semantic analysis and language modeling.</li>
           <li>Applied machine learning techniques to solve problems in linguistic datasets.</li>
         </ul>
         <div class="skills">Skills: Bengali NLP | ML | Data Analysis</div>
       </div>
-    </div>
 
-    <!-- CUET Research -->
-    <div class="timeline-item">
-      <div class="timeline-header">
-        CUET | Research Assistant 
-        <span>(Supervisor: Prof. Mohammed Moshiul Hoque)</span>
-      </div>
-      <div class="timeline-content">
+      <div class="industry-card">
+        <div class="year">CUET</div>
+        <h3>Research Assistant (Supervisor: Prof. Mohammed Moshiul Hoque)</h3>
         <ul>
           <li>Researched Bengali NLP focusing on emotion recognition and semantic similarity.</li>
           <li>Co-authored IEEE publications and participated in international conferences.</li>
@@ -189,16 +89,72 @@
       </div>
     </div>
 
+    <!-- Co-Curricular Experience -->
+    <h2 class="sub-title">Co-Curricular Experience</h2>
+    <div class="co-curricular-cards">
+      <div class="co-card">
+        <div class="year">2018 – 2019</div>
+        <h3>Logistic, IEEE Student Branch, CUET</h3>
+        <p>Assisted in logistics, planning, and execution of branch-level activities and events.</p>
+      </div>
+
+      <div class="co-card">
+        <div class="year">2019 – 2020</div>
+        <h3>Treasurer, IEEE Student Branch, CUET</h3>
+        <p>Managed finances and organized technical events for the student branch.</p>
+      </div>
+
+      <div class="co-card">
+        <div class="year">2020</div>
+        <h3>Tournament Collaborator, HULT Prize, CUET</h3>
+        <p>Collaborated in tournament organization and mentoring participants.</p>
+      </div>
+
+      <!-- Hidden cards -->
+      <div class="co-card more-card">
+        <div class="year">2020</div>
+        <h3>Team Leader of RUBY, HULT Prize CUET</h3>
+        <p>Led a team representing CUET in a global entrepreneurship challenge.</p>
+      </div>
+
+      <div class="co-card more-card">
+        <div class="year">2020</div>
+        <h3>IEEE Tensymp 2020, ICO 2020, ICNST 2018</h3>
+        <p>Presented and participated in international AI/ML and NLP conferences.</p>
+      </div>
+
+      <div class="co-card more-card">
+        <div class="year">2022 – 2023</div>
+        <h3>Secretary, IEEE YP Bangladesh</h3>
+        <p>Contributed to planning and executing events for IEEE YP Bangladesh chapter.</p>
+      </div>
+
+      <div class="co-card more-card">
+        <div class="year">2019 – Present</div>
+        <h3>Team Member, CUET NLP LAB</h3>
+        <p>Engaged in Natural Language Processing research projects including Bengali NLP.</p>
+      </div>
+    </div>
+
+    <button class="show-more-btn">Show More</button>
   </div>
 
   <script>
-    document.querySelectorAll('.timeline-header').forEach(header => {
-      header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        content.classList.toggle('open');
+    const showMoreBtn = document.querySelector('.show-more-btn');
+    const moreCards = document.querySelectorAll('.more-card');
+
+    showMoreBtn.addEventListener('click', () => {
+      moreCards.forEach(card => {
+        if (card.style.display === "block") {
+          card.style.display = "none";
+        } else {
+          card.style.display = "block";
+        }
       });
+
+      showMoreBtn.textContent =
+        showMoreBtn.textContent === "Show More" ? "Show Less" : "Show More";
     });
   </script>
-
 </body>
 </html>

@@ -4,74 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research & Publications</title>
-  <style>
-    body {
-        font-family: Arial, sans-serif; 
-        background:#152b57; 
-        margin:0; 
-        padding:20px;
-    }
-    h1 {
-        text-align:center; 
-        margin-bottom:15px;
-        color: #ddd;
-    }
-    .filters {
-        text-align:center; 
-        margin-bottom:20px;
-    }
-    .filters button {
-        padding:8px 16px; 
-        margin:5px; 
-        border:none; 
-        border-radius:20px; 
-        cursor:pointer; 
-        background:#ddd;
-    }
-    .filters button.active {
-        background:#f8a880; 
-        color:rgb(235, 238, 247);
-    }
-    .grid {
-        display:grid; 
-        grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); 
-        gap:20px;
-    }
-    .card {
-        background:white; 
-        border-radius:8px; 
-        box-shadow:0 2px 6px rgba(0,0,0,0.1); 
-        padding:15px; 
-        transition:transform 0.2s;
-    }
-    .card:hover {
-        transform:translateY(-5px);
-    }
-    .title {
-        font-weight:bold; 
-        margin-bottom:8px; 
-        font-size:16px;
-    }
-    .abstract {
-        font-size:14px; 
-        color:#555; 
-        margin-bottom:10px; 
-        line-height:1.4;
-    }
-    .meta {
-        font-size:13px; 
-        color:#777; 
-        margin-bottom:10px;
-    }
-    .links a {
-        margin-right:10px; 
-        font-size:13px; 
-        text-decoration:none; 
-        color:#f8a880;
-    }
-  </style>
+  <link rel="stylesheet" href="research.css">
+  <link rel="stylesheet" href="home.css">
+  
 </head>
 <body>
+  <!-- Animated Background -->
+    <div class="animated-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+  <!-- Sticky Navbar -->
+    <header class="sticky-header">
+      <nav class="navbar">
+        <div class="logo">
+          <span class="logo-text">Asif Iqbal</span>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="project.html" class="nav-link">Projects</a></li>
+          <li><a href="research-publication.html" class="active nav-link">Research</a></li>
+          <li><a href="certificates-awards.html" class="nav-link">Accomplishments</a></li>
+          <li>
+            <a href="contacts.html" class="nav-link contact-btn">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   <h1>Research & Publications</h1>
 
   <div class="filters">
@@ -147,7 +115,6 @@
       <div class="meta">Conference | ICO 2020</div>
       <div class="links"><a href="https://doi.org/10.1007/978-3-030-68154-8_93" target="_blank">PAPER</a></div>
     </div>
-    <img src="/Images/certificate1.png" alt="">
 
     <!-- Conference -->
     <div class="card conference">
@@ -175,19 +142,6 @@
 
   </div>
 
-  <script>
-    function filter(category){
-      let cards=document.querySelectorAll('.card');
-      document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));
-      event.target.classList.add('active');
-      cards.forEach(c=>{
-        if(category==='all' || c.classList.contains(category)){
-          c.style.display='block';
-        } else {
-          c.style.display='none';
-        }
-      });
-    }
-  </script>
+<script src="script.js"></script>
 </body>
 </html>

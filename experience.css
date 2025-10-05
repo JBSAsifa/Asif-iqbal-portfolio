@@ -1,0 +1,163 @@
+/* ================= EXPERIENCE SECTION (Unified Theme) ================= */
+.experience-container {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 40px 30px 80px;
+  margin-top: 70px;
+}
+
+/* Main Heading */
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #e6b07b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 3px 12px #e6b07b;
+}
+
+/* ================= SUB-TITLE (Industry / Co-Curricular) ================= */
+.sub-title {
+  display: inline-block;
+  background: linear-gradient(135deg, #152b57, #0f1e3a);
+  color: #e6b07b;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 14px;
+  border-left: 6px solid #e6b07b;
+  box-shadow: 0 6px 15px rgba(248, 168, 128, 0.3);
+  margin: 60px 0 40px;
+  transition: all 0.3s ease;
+}
+
+.sub-title:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(248, 168, 128, 0.45);
+}
+
+/* ================= Industry & Co-Curricular Common Card Style ================= */
+.industry-card,
+.co-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 25px 28px;
+  backdrop-filter: blur(12px);
+  flex: 1 1 320px;
+  max-width: 350px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.industry-card:hover,
+.co-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(248, 168, 128, 0.35);
+  border-color: #e6b07b;
+}
+
+/* ================= Industry Cards Layout ================= */
+.industry-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* ================= Co-Curricular Cards Layout ================= */
+.co-curricular-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+/* ================= Card Content ================= */
+.industry-card .year,
+.co-card .year {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #e6b07b;
+  margin-bottom: 10px;
+}
+
+.industry-card h3,
+.co-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.industry-card ul {
+  margin: 0 0 12px 18px;
+  padding: 0;
+}
+
+.industry-card li {
+  font-size: 0.95rem;
+  color: #d6e3f3;
+  margin-bottom: 6px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.industry-card .skills {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #e6b07b;
+  font-weight: bold;
+}
+
+.co-card p {
+  font-size: 0.95rem;
+  color: #d6e3f3;
+  margin-bottom: 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* ================= Show More Button ================= */
+.show-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: #e6b07b;
+  color: #152b57;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background: #ffd2af;
+  box-shadow: 0 0 12px rgba(248, 168, 128, 0.6);
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 1024px) {
+  .industry-card,
+  .co-card {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .industry-card,
+  .co-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

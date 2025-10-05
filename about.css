@@ -1,0 +1,217 @@
+/* ========================================
+   About Page Styles — Home Theme Version
+   ======================================== */
+
+/* General layout */
+.about-container {
+ 
+  font-family: "Inter", sans-serif;
+  padding-top: 100px;
+}
+
+/* --- Portfolio Section --- */
+/* --- Portfolio Card Section --- */
+.portfolio-section {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(12, 17, 70, 0.75); /* dark semi-transparent card */
+  border: 1px solid rgba(254, 177, 100, 0.4);
+  box-shadow: 0 0 25px rgba(254, 177, 100, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 50px auto;
+  max-width: 1200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.portfolio-section:hover {
+  transform: translateY(-8px);
+  border: 1px solid #feb164;
+  box-shadow: 0 0 35px rgba(254, 177, 100, 0.4);
+}
+
+/* Image side */
+.left-img {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  overflow: hidden;
+}
+
+.left-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-right: 1px solid rgba(254, 177, 100, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-section:hover .left-img img {
+  transform: scale(1.05);
+}
+
+/* Text side */
+.right-text {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.right-text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #feb164;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px rgba(254, 177, 100, 0.5);
+}
+
+.right-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #eee;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .portfolio-section {
+    flex-direction: column;
+  }
+  .left-img img {
+    height: 250px;
+    border-right: none;
+    border-bottom: 1px solid rgba(254, 177, 100, 0.3);
+  }
+  .right-text {
+    padding: 25px 20px;
+  }
+  .right-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .right-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+
+/* --- Education Section --- */
+.education {
+  padding: 60px 25px;
+  background: linear-gradient(135deg, #010523, #08136a);
+  border-radius: 18px;
+  margin: 60px auto;
+  max-width: 1200px;
+  box-shadow: 0 0 25px rgba(254, 177, 100, 0.2);
+  border: 1px solid rgba(100, 100, 254, 0.2);
+}
+
+/* Section Heading — Elegant Home Theme */
+/* Section Heading — Education-style */
+.section-title {
+  color: #feb164;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(254, 177, 100, 0.6);
+  position: relative;
+}
+
+/* Small accent line under the heading */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #feb164;
+  margin: 12px auto 0;
+  border-radius: 2px;
+  box-shadow: 0 0 12px rgba(254, 177, 100, 0.5);
+}
+
+/* Section Intro — centered, elegant */
+.section-intro {
+  color: #ddd;
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 45px auto;
+  line-height: 1.7;
+}
+
+
+
+
+/* Education Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Card Styles */
+.value-card {
+  flex: 1 1 300px;
+  border-radius: 16px;
+  padding: 25px;
+  background: rgba(12, 17, 70, 0.75);
+  border: 1px solid rgba(254, 177, 100, 0.4);
+  box-shadow: 0 0 20px rgba(254, 177, 100, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #feb164;
+  box-shadow: 0 0 30px rgba(254, 177, 100, 0.45);
+}
+
+/* Card Titles & Text */
+.value-card h5 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #feb164;
+  text-shadow: 0 0 6px rgba(254, 177, 100, 0.5);
+}
+
+.value-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e4e7f0;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .portfolio-section {
+    flex-direction: column;
+  }
+  .left-img img {
+    height: 60vh;
+  }
+  .right-text {
+    padding: 40px 25px;
+    text-align: center;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .value-card {
+    flex: 1 1 90%;
+    min-height: 200px;
+  }
+}
