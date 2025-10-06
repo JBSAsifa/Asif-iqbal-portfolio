@@ -1,7 +1,7 @@
 /* =============== Base Styles ===============*/
 body {
   font-family: "Inter", sans-serif;
-               
+
   line-height: 1.6;
 }
 
@@ -23,38 +23,37 @@ body {
 .section-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #ffffff;          
+  color: #feb164;
 }
 
 .section-intro {
   font-size: 1rem;
   max-width: 700px;
   margin: 15px auto 0;
-  color: #ffffff;            
+  color: #feb164;
 }
 
 .sub-title {
-  display: inline-block;                  
-  background: linear-gradient(135deg, #010523, #041069); 
-  color: #ffffff;                         
-  font-size: 1.6rem;                      
+  display: inline-block;
+  background: linear-gradient(135deg, #010523, #041069);
+  color: #feb164;
+  font-size: 1.6rem;
   font-weight: 700;
-  padding: 10px 20px;                     
-  border-radius: 14px;                    
-  border-left: 6px solid #B3CFE5;  
-  box-shadow: 0 6px 15px #1A3D63, 0 0 15px #1A3D63; 
-  margin: 60px 0 50px;                    
+  padding: 10px 20px;
+  border-radius: 14px;
+  border-left: 6px solid #b3cfe5;
+  box-shadow: 0 6px 15px #1a3d63, 0 0 15px #1a3d63;
+  margin: 60px 0 50px;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 /* ================= Achievements Cards ================= */
 .achievements-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  justify-content: center; 
+  justify-content: center;
 
   margin-bottom: 0;
 }
@@ -67,50 +66,49 @@ body {
   flex: 1 1 300px;
   max-width: 350px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #4a7fa7;
+  border: 1px solid #fcb498;
 }
 
 .achievement-card:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 12px 28px #0a285a;
-  border-color: #0A1931;
+  border-color: #0a1931;
 }
 
 .achievement-card .year {
   font-weight: 700;
   font-size: 1.1rem;
-  color: #ffffff;
+  color: #feb164;
   margin-bottom: 10px;
 }
 
 .achievement-card h3 {
   font-size: 1.03rem;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #feb164;
 }
 
 .achievement-card p {
   font-size: 0.95rem;
-  color: #c7e7ff;   
+  color: #ffffff;
   margin-bottom: 12px;
   text-align: justify;
 }
 
 .achievement-card h3,
 .achievement-card p {
-  word-spacing: 1px;      
-  letter-spacing: -0.5px;  
-  line-height: 1.4;        
-  white-space: normal;     
+  word-spacing: 1px;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  white-space: normal;
 }
-
 
 /* ================= Co-Curricular Cards ================= */
 .co-curricular-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  justify-content: center; 
+  justify-content: center;
   margin-bottom: 0;
 }
 
@@ -135,55 +133,54 @@ body {
   font-size: 12px;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(135deg, #fcb498, #041069); 
+  background: linear-gradient(135deg, #fcb498, #041069);
   color: #fff;
   cursor: pointer;
 }
 
 .show-more-btn:hover {
-  background: linear-gradient(135deg, #041069, #010523); 
+  background: linear-gradient(135deg, #041069, #010523);
 }
 
 .co-card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow:  0 12px 28px #0a285a;
+  box-shadow: 0 12px 28px #0a285a;
 }
 
 .co-card .year {
   font-weight: 700;
   font-size: 1.1rem;
-  color: #ffffff;
+  color: #feb164;
   margin-bottom: 10px;
 }
 
 .co-card h3 {
   font-size: 1.03rem;
   margin-bottom: 10px;
-  color: #ffffff;   
+  color: #feb164;
 }
 
 .co-card p {
   font-size: 0.95rem;
-  color: #c7e7ff;   
+  color: #ffffff;
   margin-bottom: 0;
   text-align: justify;
 }
 
 .co-card h3,
 .co-card p {
-  word-spacing: 1px;      
-  letter-spacing: -0.5px;  
-  line-height: 1.4;       
-  white-space: normal;      
+  word-spacing: 1px;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  white-space: normal;
 }
-
 
 /* ================= Certificates ================= */
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;       
-  margin-bottom: 0;  
+  gap: 20px;
+  margin-bottom: 0;
   justify-items: center;
 }
 .cert-item {
@@ -199,8 +196,8 @@ body {
 }
 
 .cert-item:hover {
-   transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .cert-item img.cert-img {
@@ -217,11 +214,11 @@ body {
 }
 
 .cert-card {
-  /* background: linear-gradient(#0A1931, #4a7fa7); */
+  background: linear-gradient(#051228, #e5eaee2d);
   padding: 12px 10px;
   border-radius: 0 0 14px 14px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   width: 100%;
   box-sizing: border-box;
   margin-top: 0;
@@ -229,7 +226,7 @@ body {
 
 .cert-card h4 {
   margin: 10px 0 5px;
-  color: #ffffff;
+  color: #feb164;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -237,7 +234,7 @@ body {
 .cert-card p {
   margin: 0;
   font-size: 0.9rem;
-  color: #c7e7ff;
+  color: #ffffff;
   text-align: justify;
 }
 
@@ -256,7 +253,7 @@ body {
   margin: 10px auto 0;
   padding: 8px 10px;
   background: linear-gradient(135deg, #010523, #041069);
-  color: #c7e7ff;
+  color: #ffffff;
   font-size: 0.8rem;
   font-weight: 700;
   text-decoration: none;
@@ -273,21 +270,26 @@ body {
 
 .verify-link:active {
   transform: scale(0.97);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.4), 0 0 10px rgba(19, 4, 83, 0.3);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4), 0 0 10px rgba(19, 4, 83, 0.3);
 }
 
 .cert-item.hidden {
-  visibility: hidden;
-  height: 0;
-  overflow: hidden;
+  max-height: 0;
   opacity: 0;
+  transform: translateY(20px);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
   transition: all 0.4s ease;
 }
 
 .cert-item.show {
-  visibility: visible;
-  height: auto;
+  max-height: 1000px;
   opacity: 1;
+  transform: translateY(0);
+  overflow: visible;
+  margin: initial;
+  padding: initial;
 }
 
 .btn-container {
@@ -297,9 +299,9 @@ body {
 
 .view-more-btn {
   display: block;
-  margin: 5px auto 15px auto; 
+  margin: 5px auto 15px auto;
   padding: 12px 25px;
-  background: linear-gradient(135deg, #010523, #041069); 
+  background: linear-gradient(135deg, #010523, #041069);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -309,7 +311,7 @@ body {
 }
 
 .view-more-btn:hover {
-  background: linear-gradient(135deg, #041069, #010523); 
+  background: linear-gradient(135deg, #041069, #010523);
 }
 
 /* ================= Additional Responsiveness ================= */

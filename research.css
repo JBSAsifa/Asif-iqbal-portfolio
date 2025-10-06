@@ -1,115 +1,115 @@
-
-
-/* Body & general layout */
-body {
-    font-family: Arial, sans-serif;
-    background: #152b57;
-    margin: 70px;
-    padding: 20px;
-    color: #ddd;
+/* Research Section Styles */
+.research-section {
+  font-family: Arial, sans-serif;
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #ddd;
 }
 
 /* Heading */
-h1 {
-    text-align: center;
-    margin-bottom: 15px;
-    color: #f8a880;;
-    font-size: 2.5rem;
+.research-section h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #feb164;
+  font-size: 2.5rem;
 }
-
 
 /* Filters Buttons */
-.filters {
-    text-align: center;
-    margin-bottom: 20px;
+.research-section .filters {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.filters button {
-    padding: 8px 16px;
-    margin: 5px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    background: #ddd;
-    color: #152b57;
-    font-weight: bold;
-    transition: all 0.3s;
+.research-section .filters button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #ddd;
+  color: #152b57;
+  font-weight: bold;
+  transition: all 0.3s;
 }
 
-.filters button.active,
-.filters button:hover {
-    background: #f8a880;
-    color: rgb(235, 238, 247);
+.research-section .filters button.active,
+.research-section .filters button:hover {
+  background: #feb164;
+  color: rgb(235, 238, 247);
 }
 
 /* Grid for cards */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+.research-section .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 /* Card styling */
-.card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    padding: 15px;
-    transition: transform 0.2s, box-shadow 0.2s;
+.research-section .card {
+  background: rgba(49, 54, 116, 0.85);
+  color: #f5f5f5;
+  border: 1px solid rgba(243, 153, 64, 0.7);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  position: relative;
+  overflow: hidden;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+.research-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(254, 177, 100, 0.3);
+  border-color: rgba(254, 177, 100, 1);
 }
 
-.title {
-    font-weight: bold;
-    margin-bottom: 8px;
-    font-size: 16px;
+.research-section .title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #f5f5f5;
 }
 
-.abstract {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-    line-height: 1.4;
+.research-section .abstract {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 10px;
+  line-height: 1.4;
 }
 
-.meta {
-    font-size: 13px;
-    color: #777;
-    margin-bottom: 10px;
+.research-section .meta {
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 10px;
 }
 
-.links a {
-    margin-right: 10px;
-    font-size: 13px;
-    text-decoration: none;
-    color: #f8a880;
+.research-section .links a {
+  margin-right: 10px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #feb164;
+  transition: color 0.3s ease;
+}
+
+.research-section .links a:hover {
+  color: #e6b07b;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-    .filters button {
-        padding: 6px 12px;
-        font-size: 14px;
-    }
-}
-@media (max-width: 480px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-links li {
-        margin-bottom: 10px;
-    }
+  .research-section h1 {
+    font-size: 2rem;
+  }
+  .research-section .filters button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
 }
 
-.grid .card {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
+.research-section .grid .card {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }

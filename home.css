@@ -101,6 +101,7 @@ body {
 /* ========================================
      Sticky Header & Navigation
      ======================================== */
+/* Sticky Header */
 .sticky-header {
   position: fixed;
   top: 0;
@@ -119,17 +120,18 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 5%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .logo-img {
-  height: 40px; /* adjust size */
+  height: 40px;
   width: auto;
 }
 
@@ -137,6 +139,7 @@ body {
   transform: scale(1.05);
 }
 
+/* Nav Links - Desktop Default */
 .nav-links {
   display: flex;
   list-style: none;
@@ -175,12 +178,9 @@ body {
   width: 100%;
 }
 
+/* Contact Button */
 .contact-btn {
-  background: linear-gradient(
-    135deg,
-    var(--accent-primary),
-    var(--accent-secondary)
-  );
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
   padding: 0.6rem 1.5rem !important;
   border-radius: 25px;
   color: var(--bg-primary) !important;
@@ -198,7 +198,7 @@ body {
   box-shadow: 0 6px 20px rgba(254, 177, 100, 0.5);
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu - Hidden on Desktop */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -226,6 +226,49 @@ body {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
+/* ===== MOBILE STYLES ===== */
+@media screen and (max-width: 768px) {
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide desktop nav links */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* hide offscreen */
+    width: 250px;
+    height: 100vh;
+    background: rgba(1, 5, 35, 0.95);
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5rem;
+    transition: right 0.3s ease;
+    display: flex; /* keep it flex for mobile */
+  }
+
+  /* Show nav links when active */
+  .nav-links.active {
+    right: 0;
+  }
+
+  /* Center links and make bigger */
+  .nav-links li {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+
+  /* Hide contact button on mobile (optional) */
+  .contact-btn {
+    display: none;
+  }
+}
+
+
 /* ========================================
      Hero Section
      ======================================== */
@@ -239,7 +282,7 @@ body {
 }
 
 .hero-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }
@@ -254,10 +297,12 @@ body {
 .hero-text {
   opacity: 0;
   transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .hero-text.visible {
-  animation: fadeInUp 0.8s ease forwards;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @keyframes fadeInUp {
@@ -520,10 +565,12 @@ body {
 .hero-image {
   opacity: 0;
   transform: translateX(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .hero-image.visible {
-  animation: fadeInRight 0.8s ease forwards;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @keyframes fadeInRight {
@@ -619,7 +666,6 @@ body {
   }
 }
 
-
 .wheel {
   width: 4px;
   height: 10px;
@@ -655,7 +701,7 @@ body {
 .projects-page {
   min-height: 100vh;
   padding: 8rem 5% 4rem;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -664,10 +710,25 @@ body {
   margin-bottom: 4rem;
   opacity: 0;
   transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .section-header.visible {
-  animation: fadeInUp 0.8s ease forwards;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accomplishments section - no animations but keep title visible */
+.awards-section .section-header {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+.awards-section .section-title {
+  opacity: 1;
+  transform: none;
+  animation: none;
 }
 
 .section-title {
@@ -679,19 +740,6 @@ body {
   display: inline-block;
 }
 
-.title-underline {
-  width: 100px;
-  height: 4px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--accent-primary),
-    transparent
-  );
-  margin: 0 auto 1.5rem;
-  border-radius: 2px;
-  animation: expand-line 1s ease forwards;
-}
 
 @keyframes expand-line {
   from {
@@ -720,10 +768,12 @@ body {
   margin-bottom: 3rem;
   opacity: 0;
   transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .filter-btns.visible {
-  animation: fadeInUp 0.8s ease 0.2s forwards;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .filter {
@@ -838,6 +888,33 @@ body {
 }
 
 /* ========================================
+     About Section Styles
+     ======================================== */
+.about-section {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-container {
+  font-family: "Inter", sans-serif;
+}
+
+/* Experience Section Styles */
+.experience-section {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Skills Section Styles */
+.skills-section {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========================================
      Additional Animations & Effects
      ======================================== */
 
@@ -864,6 +941,7 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  color: #feb164;
 }
 
 .btn::before {
@@ -979,7 +1057,3 @@ body {
     height: 200px;
   }
 }
-
-
-
-    

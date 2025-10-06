@@ -8,9 +8,8 @@ body {
 
 .contact-section {
   width: 80%;
-  max-width: 900px;
-  margin: 160px auto;
-  background: rgba(7, 11, 62, 0.85); /* semi-transparent dark card */
+  max-width: 1200px;
+  margin: 80px auto;
   padding: 40px;
   display: flex;
   justify-content: space-between;
@@ -112,7 +111,7 @@ body {
 /* Footer */
 .site-footer {
   background: #010523; /* same dark navy as navbar */
-  color: #feb164 ;
+  color: #feb164;
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;

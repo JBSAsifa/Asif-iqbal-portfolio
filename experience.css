@@ -3,31 +3,29 @@
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 40px 30px 80px;
-  margin-top: 70px;
 }
 
 /* Main Heading */
 h1 {
-  margin-top: 50px;
   text-align: center;
   margin-bottom: 40px;
   font-size: 2.5rem;
-  color: #e6b07b;
+  color: #feb164;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 0 3px 12px #e6b07b;
+  text-shadow: 0 3px 12px #feb164;
 }
 
 /* ================= SUB-TITLE (Industry / Co-Curricular) ================= */
 .sub-title {
   display: inline-block;
   background: linear-gradient(135deg, #152b57, #0f1e3a);
-  color: #e6b07b;
+  color: #feb164;
   font-size: 1.6rem;
   font-weight: 700;
   padding: 10px 22px;
   border-radius: 14px;
-  border-left: 6px solid #e6b07b;
+  border-left: 6px solid #feb164;
   box-shadow: 0 6px 15px rgba(248, 168, 128, 0.3);
   margin: 60px 0 40px;
   transition: all 0.3s ease;
@@ -56,7 +54,7 @@ h1 {
 .co-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(248, 168, 128, 0.35);
-  border-color: #e6b07b;
+  border-color: #feb164;
 }
 
 /* ================= Industry Cards Layout ================= */
@@ -82,7 +80,7 @@ h1 {
 .co-card .year {
   font-weight: 700;
   font-size: 1.1rem;
-  color: #e6b07b;
+  color: #feb164;
   margin-bottom: 10px;
 }
 
@@ -109,7 +107,7 @@ h1 {
 .industry-card .skills {
   margin-top: 8px;
   font-size: 0.9rem;
-  color: #e6b07b;
+  color: #feb164;
   font-weight: bold;
 }
 
@@ -129,7 +127,7 @@ h1 {
   font-size: 0.9rem;
   border: none;
   border-radius: 8px;
-  background: #e6b07b;
+  background: #feb164;
   color: #152b57;
   font-weight: 600;
   cursor: pointer;

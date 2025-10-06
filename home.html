@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Md. Asif Iqbal | Portfolio</title>
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="experience.css" />
+    <link rel="stylesheet" href="skills.css" />
+    <link rel="stylesheet" href="research.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contacts.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -14,6 +20,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <!-- ScrollReveal CDN -->
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <!-- Animated Background -->
@@ -27,7 +35,7 @@
     <header class="sticky-header">
       <nav class="navbar">
         <div class="logo">
-          <img src="/Images/logo.png" alt="Logo" class="logo-img">
+          <img src="Images/logo.png" alt="Logo" class="logo-img" />
         </div>
         <div class="hamburger">
           <span></span>
@@ -35,22 +43,26 @@
           <span></span>
         </div>
         <ul class="nav-links">
-          <li><a href="home.html" class="active nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="experience.html" class="nav-link">Experience</a></li>
-          <li><a href="skills.html" class="nav-link">Skills</a></li>
-          <li><a href="project.html" class="nav-link">Projects</a></li>
-          <li><a href="research-publication.html" class="nav-link">Research</a></li>
-          <li><a href="certificates-awards.html" class="nav-link">Accomplishments</a></li>
+          <li><a href="#home" class="active nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
           <li>
-            <a href="contacts.html" class="nav-link contact-btn">Contact</a>
+            <a href="#research" class="nav-link">Research</a>
+          </li>
+          <li>
+            <a href="#certificates" class="nav-link">Accomplishments</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link contact-btn">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
       <div class="hero-container">
         <div class="hero-content">
           <div class="hero-text fade-in">
@@ -114,11 +126,19 @@
 
             <!-- Animated Buttons -->
             <div class="buttons">
-              <a href="project.html" class="btn btn-primary">
+              <a
+                href="project.html"
+                class="btn btn-primary"
+                style="color: #030c50"
+              >
                 <span>View My Research</span>
                 <i class="fas fa-arrow-right"></i>
               </a>
-              <a href="Resume-Md. Asif Iqbal .pdf" class="btn btn-secondary" download>
+              <a
+                href="Resume-Md. Asif Iqbal .pdf"
+                class="btn btn-secondary"
+                download
+              >
                 <span>Download CV</span>
                 <i class="fas fa-download"></i>
               </a>
@@ -128,15 +148,1197 @@
           <div class="hero-image fade-in-right">
             <div class="image-wrapper">
               <div class="glow-effect"></div>
-             <img src="/Images/profile1.png" alt="">
-            
+              <img src="/Images/profile1.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-
-  
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <!-- Portfolio Section -->
+        <div class="portfolio-section">
+          <div class="left-img">
+            <img src="/Images/profile1.png" alt="Portfolio Image" />
+          </div>
+
+          <div class="right-text">
+            <h1>I'm Asif Iqbal</h1>
+            <p>
+              I am a strong engineering professional with a Bachelor of Science
+              in Computer Science and Engineering from Chittagong University of
+              Engineering and Technology (CUET). I am skilled in Python, C, C++,
+              and SQL, with expertise in Data Science, Data Analysis, NLP,
+              Machine Learning, Deep Learning, and Artificial Intelligence. At
+              CUET NLP Lab, I have worked on major projects involving dataset
+              creation, annotation, and model applications for information
+              extraction. My developed datasets include BEmoD (Bengali Emotion
+              Dataset), BEmoC (Bengali Emotion Corpus), BAD (Bengali Aggression
+              Dataset), and SemSD (Semantic Similarity Dataset). Passionate
+              about coding, I have solved diverse algorithmic problems and
+              re-developed the K-means clustering algorithm for better
+              computation. I also completed a year-long IBM Quantum Computing
+              course and published 10 papers in international conferences and
+              journals. Beyond academics, I actively contributed to IEEE CUET SB
+              and HULT Prize at CUET, serving as Treasurer and committee member.
+            </p>
+          </div>
+        </div>
+
+        <!-- Education Section -->
+        <section class="education">
+          <h3 class="section-title">Education</h3>
+          <p class="section-intro">
+            Here is a summary of my academic background.
+          </p>
+
+          <div class="cards">
+            <div class="value-card high-school">
+              <h5>High School</h5>
+              <p>
+                Govt. Muslim High School<br />
+                SSC, High School/Secondary Diplomas and Certificates.<br />
+                2007 - 2013<br />
+                Grade: A+
+              </p>
+            </div>
+
+            <div class="value-card hsc">
+              <h5>HSC</h5>
+              <p>
+                Government City College<br />
+                HSC, College/University Preparatory and Advanced High
+                School/Secondary Diploma Program.<br />
+                2013 - 2015<br />
+                Grade: A+
+              </p>
+            </div>
+            <div class="value-card bachelor">
+              <h5>Bachelor's Degree</h5>
+              <p>
+                Chittagong University of Engineering & Technology<br />
+                B.Sc., COMPUTER SCIENCE & ENGINEERING.<br />
+                2016 - 2020
+              </p>
+              <p>Grade: 3.67 out of 4 (11th)</p>
+            </div>
+
+            <div class="value-card skills">
+              <h5>Skills</h5>
+              <p>
+                Bangladesh Bharot Digital Service and Employment Training
+                (BDSET)<br />
+                Training of Trainers, Artificial Intelligence<br />
+                Jun 2022 - Jan 2023<br />
+                Skills: Artificial Intelligence (AI) · Machine Learning · Deep
+                Learning · Virtual Reality (VR) · Augmented Reality (AR) · Mixed
+                Reality.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="experience-container">
+        <h1>Experience</h1>
+
+        <!-- Industry Experience -->
+        <h2 class="sub-title">Industry Experience</h2>
+        <div class="industry-cards">
+          <div class="industry-card">
+            <div class="year">2021 – Present</div>
+            <h3>Workera.ai | Senior Assessment Developer</h3>
+            <ul>
+              <li>
+                Designed & optimized assessment engine architecture for
+                large-scale AI-powered testing platforms.
+              </li>
+              <li>
+                Led cross-functional teams and developed strategic plans
+                aligning frameworks with industry standards.
+              </li>
+              <li>
+                Implemented robust quality assurance processes ensuring high
+                reliability and accuracy.
+              </li>
+            </ul>
+            <div class="skills">
+              Skills: Python | ML Frameworks | Assessment Systems
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <div class="year">2024 – Present</div>
+            <h3>AI/ML Instructor | CUET & ITBI</h3>
+            <ul>
+              <li>
+                Designed comprehensive AI/ML courses integrating theory, labs,
+                and best practices.
+              </li>
+              <li>
+                Delivered lectures, workshops, and hands-on sessions for
+                students and professionals.
+              </li>
+              <li>
+                Mentored projects, competitions, and research initiatives.
+              </li>
+            </ul>
+            <div class="skills">
+              Skills: Instructional Design | AI/ML | Mentorship
+            </div>
+          </div>
+
+          <div class="industry-card">
+            <div class="year">IIT Kharagpur</div>
+            <h3>Research Intern (Supervisor: Prof. Debasis Samanta)</h3>
+            <ul>
+              <li>
+                Worked on advanced NLP projects including semantic analysis and
+                language modeling.
+              </li>
+              <li>
+                Applied machine learning techniques to solve problems in
+                linguistic datasets.
+              </li>
+            </ul>
+            <div class="skills">Skills: Bengali NLP | ML | Data Analysis</div>
+          </div>
+
+          <div class="industry-card">
+            <div class="year">CUET</div>
+            <h3>
+              Research Assistant (Supervisor: Prof. Mohammed Moshiul Hoque)
+            </h3>
+            <ul>
+              <li>
+                Researched Bengali NLP focusing on emotion recognition and
+                semantic similarity.
+              </li>
+              <li>
+                Co-authored IEEE publications and participated in international
+                conferences.
+              </li>
+            </ul>
+            <div class="skills">
+              Skills: Text Mining | Emotion Classification | Research
+              Collaboration
+            </div>
+          </div>
+        </div>
+
+        <!-- Co-Curricular Experience -->
+        <h2 class="sub-title">Co-Curricular Experience</h2>
+        <div class="co-curricular-cards">
+          <div class="co-card">
+            <div class="year">2018 – 2019</div>
+            <h3>Logistic, IEEE Student Branch, CUET</h3>
+            <p>
+              Assisted in logistics, planning, and execution of branch-level
+              activities and events.
+            </p>
+          </div>
+
+          <div class="co-card">
+            <div class="year">2019 – 2020</div>
+            <h3>Treasurer, IEEE Student Branch, CUET</h3>
+            <p>
+              Managed finances and organized technical events for the student
+              branch.
+            </p>
+          </div>
+
+          <div class="co-card">
+            <div class="year">2020</div>
+            <h3>Tournament Collaborator, HULT Prize, CUET</h3>
+            <p>
+              Collaborated in tournament organization and mentoring
+              participants.
+            </p>
+          </div>
+
+          <!-- Hidden cards -->
+          <div class="co-card more-card">
+            <div class="year">2020</div>
+            <h3>Team Leader of RUBY, HULT Prize CUET</h3>
+            <p>
+              Led a team representing CUET in a global entrepreneurship
+              challenge.
+            </p>
+          </div>
+
+          <div class="co-card more-card">
+            <div class="year">2020</div>
+            <h3>IEEE Tensymp 2020, ICO 2020, ICNST 2018</h3>
+            <p>
+              Presented and participated in international AI/ML and NLP
+              conferences.
+            </p>
+          </div>
+
+          <div class="co-card more-card">
+            <div class="year">2022 – 2023</div>
+            <h3>Secretary, IEEE YP Bangladesh</h3>
+            <p>
+              Contributed to planning and executing events for IEEE YP
+              Bangladesh chapter.
+            </p>
+          </div>
+
+          <div class="co-card more-card">
+            <div class="year">2019 – Present</div>
+            <h3>Team Member, CUET NLP LAB</h3>
+            <p>
+              Engaged in Natural Language Processing research projects including
+              Bengali NLP.
+            </p>
+          </div>
+        </div>
+
+        <button class="show-more-btn">Show More</button>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h1 class="section-title">Skills</h1>
+
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <h3 class="sub-title">Languages</h3>
+          <div class="skills-grid">
+            <span
+              class="tooltip"
+              data-desc="C is a foundational system programming language. C++ builds on C with OOP."
+              >C, C++</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A versatile language widely used in AI, ML, and web apps. Known for readability and a huge ecosystem of libraries."
+              >Python</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A Unix shell and command language. Great for scripting, automation, and DevOps workflows."
+              >Bash</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A relational database management system. Used for efficient structured data storage and queries."
+              >MySQL</span
+            >
+            <span
+              class="tooltip"
+              data-desc="The core scripting language of the web. Runs in browsers and on servers via Node.js."
+              >JavaScript</span
+            >
+            <span
+              class="tooltip"
+              data-desc="An object-oriented, platform-independent language. Common in enterprise systems and Android apps."
+              >Java</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A hardware description language. Used for modeling and simulating digital circuits."
+              >Verilog HDL</span
+            >
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <h3 class="sub-title">Libraries</h3>
+          <div class="skills-grid">
+            <span
+              class="tooltip"
+              data-desc="For natural language processing. Includes tokenization, parsing, and semantic analysis."
+              >NLTK</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A Python library for classical machine learning. Supports regression, classification, and clustering."
+              >Scikit-learn</span
+            >
+            <span
+              class="tooltip"
+              data-desc="Efficient NLP library for topic modeling. Great for semantic analysis and word embeddings."
+              >Gensim</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A data analysis and manipulation library. Ideal for tabular and time series data."
+              >Pandas</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A fundamental library for numerical computing. Supports arrays, linear algebra, and scientific math."
+              >NumPy</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A comprehensive plotting library. Creates static, interactive, and animated visualizations."
+              >Matplotlib</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A statistical data visualization library. Simplifies plots with a clean, high-level API."
+              >Seaborn</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A deep learning framework by Google. Used for neural networks and large-scale ML."
+              >TensorFlow</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A flexible deep learning library. Favored in AI research for dynamic computation."
+              >PyTorch</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A platform for containerized applications. Ensures consistent environments across systems."
+              >Docker</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A container orchestration system. Automates deployment, scaling, and management."
+              >Kubernetes</span
+            >
+            <span
+              class="tooltip"
+              data-desc="An open-source ML lifecycle tool. Helps track experiments, models, and deployments."
+              >MLflow</span
+            >
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <h3 class="sub-title">Frameworks</h3>
+          <div class="skills-grid">
+            <span
+              class="tooltip"
+              data-desc="An interactive notebook environment. Great for coding, visualization, and data analysis."
+              >Jupyter</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A distributed version control system. Enables collaboration, branching, and code tracking."
+              >Git</span
+            >
+            <span
+              class="tooltip"
+              data-desc="A high-quality document preparation system. Commonly used for research papers and technical writing."
+              >LaTeX</span
+            >
+          </div>
+        </div>
+
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+
+      <!-- Dots -->
+      <div class="dots-container"></div>
+    </section>
+
+    <!-- Tooltip Box -->
+    <div id="tooltip-box" class="tooltip-box"></div>
+
+    <!-- Projects Section -->
+    <main id="projects" class="projects-page">
+      <section class="projects">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Projects</h2>
+
+          <p class="section-intro">
+            A showcase of my selected projects across NLP research, machine
+            learning applications, and hardware/software integration,
+            highlighting problem-solving, technical skills, and real-world
+            impact.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-btns fade-in">
+          <button class="filter active" data-category="all">
+            <i class="fas fa-th"></i> All
+          </button>
+          <button class="filter" data-category="nlp">
+            <i class="fas fa-brain"></i> NLP Research
+          </button>
+          <button class="filter" data-category="ml">
+            <i class="fas fa-robot"></i> ML Applications
+          </button>
+          <button class="filter" data-category="hardware">
+            <i class="fas fa-microchip"></i> Hardware Integration
+          </button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid">
+          <!-- NLP Project -->
+          <article class="card nlp" data-aos="fade-up">
+            <h3>Research on Natural Language Processing</h3>
+            <p>
+              Developed and annotated a dataset for low-resource NLP, focusing
+              on emotion classification and semantic similarity.
+            </p>
+            <div class="tags">
+              <span><i class="fab fa-python"></i> Python</span>
+              <span><i class="fas fa-language"></i> NLP</span>
+              <span><i class="fas fa-tag"></i> Annotation</span>
+            </div>
+            <a
+              href="https://github.com/iamasifiqbal/Dataquest-Guided-Project"
+              target="_blank"
+              class="btn small"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </article>
+
+          <!-- ML Project -->
+          <article class="card ml" data-aos="fade-up" data-aos-delay="100">
+            <h3>Machine Learning Algorithm Development</h3>
+            <p>
+              Refined K-means clustering algorithm to achieve reduced
+              computation cost while maintaining accuracy.
+            </p>
+            <div class="tags">
+              <span><i class="fab fa-python"></i> Python</span>
+              <span><i class="fas fa-project-diagram"></i> ML</span>
+              <span><i class="fas fa-circle-notch"></i> Clustering</span>
+            </div>
+            <a
+              href="https://github.com/iamasifiqbal/ML_Projects"
+              target="_blank"
+              class="btn small"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </article>
+
+          <!-- ML for Health -->
+          <article class="card ml" data-aos="fade-up" data-aos-delay="200">
+            <h3>Machine Learning for Health</h3>
+            <p>
+              Analyzed COVID-19's impact on countries and clustered patients
+              based on health habits using ML techniques.
+            </p>
+            <div class="tags">
+              <span><i class="fab fa-python"></i> Python</span>
+              <span><i class="fas fa-table"></i> Pandas</span>
+              <span><i class="fas fa-chart-bar"></i> Data Analysis</span>
+            </div>
+            <a
+              href="https://github.com/iamasifiqbal/COVID-19-relation-with-temperature"
+              target="_blank"
+              class="btn small"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </article>
+
+          <!-- Web Project -->
+          <article class="card ml" data-aos="fade-up">
+            <h3>Website for Teacher (Local Host-based)</h3>
+            <p>
+              A web-based system developed with Bootstrap, HTML, and CSS for
+              teachers' academic use.
+            </p>
+            <div class="tags">
+              <span><i class="fab fa-html5"></i> HTML</span>
+              <span><i class="fab fa-css3-alt"></i> CSS</span>
+              <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+            </div>
+            <a href="#" target="_blank" class="btn small">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </article>
+
+          <!-- Hardware Projects -->
+          <article
+            class="card hardware"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h3>Obstacle Avoiding Robot</h3>
+            <p>
+              An Arduino-based robot capable of detecting and avoiding obstacles
+              autonomously.
+            </p>
+            <div class="tags">
+              <span><i class="fas fa-microchip"></i> Arduino</span>
+              <span><i class="fas fa-robot"></i> Robotics</span>
+              <span><i class="fas fa-satellite-dish"></i> Sensors</span>
+            </div>
+            <a href="#" target="_blank" class="btn small">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </article>
+
+          <article
+            class="card hardware"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3>Line Follower Robot</h3>
+            <p>
+              Designed and built an Arduino-based robot that follows a
+              predefined line path.
+            </p>
+            <div class="tags">
+              <span><i class="fas fa-microchip"></i> Arduino</span>
+              <span><i class="fas fa-robot"></i> Robotics</span>
+            </div>
+            <a href="#" target="_blank" class="btn small">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </article>
+
+          <article class="card ml" data-aos="fade-up">
+            <h3>Airline Scheduling with MAX Flow Algorithm</h3>
+            <p>
+              Developed an optimization algorithm for airline scheduling to
+              maximize profits with resource constraints.
+            </p>
+            <div class="tags">
+              <span><i class="fas fa-code"></i> Algorithms</span>
+              <span><i class="fab fa-java"></i> Java</span>
+              <span><i class="fas fa-chart-line"></i> Optimization</span>
+            </div>
+            <a href="#" target="_blank" class="btn small">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </article>
+
+          <article
+            class="card hardware"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h3>Footbot</h3>
+            <p>
+              An Arduino-based robot controlled by Bluetooth, designed for
+              robo-fighting competitions.
+            </p>
+            <div class="tags">
+              <span><i class="fas fa-microchip"></i> Arduino</span>
+              <span><i class="fab fa-bluetooth-b"></i> Bluetooth</span>
+              <span><i class="fas fa-robot"></i> Robotics</span>
+            </div>
+            <a href="#" target="_blank" class="btn small">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </article>
+
+          <article class="card ml" data-aos="fade-up" data-aos-delay="200">
+            <h3>Classroom Scheduling (Java)</h3>
+            <p>
+              A Java application designed to schedule classrooms and labs
+              efficiently at the university level.
+            </p>
+            <div class="tags">
+              <span><i class="fab fa-java"></i> Java</span>
+              <span><i class="fas fa-calendar-alt"></i> Scheduling</span>
+            </div>
+            <a href="#" target="_blank" class="btn small">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Research Section -->
+    <section id="research" class="research-section">
+      <h1>Research & Publications</h1>
+
+      <div class="filters">
+        <button class="active" onclick="filter('all')">All</button>
+        <button onclick="filter('conference')">Conference Papers</button>
+        <button onclick="filter('journal')">Journal Articles</button>
+        <button onclick="filter('submitted')">Submitted Works</button>
+      </div>
+
+      <div class="grid" id="pubs">
+        <div class="card journal">
+          <div class="title">
+            BEmoC: A Corpus for Identifying Emotion in Bengali Texts
+          </div>
+          <div class="abstract">
+            Developed BEmoC corpus of 7000 Bengali texts labeled into six
+            emotions; achieved κ = 0.969 reliability.
+          </div>
+          <div class="meta">Journal | SN Computer Science (2022)</div>
+          <div class="links">
+            <a href="https://doi.org/10.1007/s42979-022-01028-w" target="_blank"
+              >PAPER</a
+            >
+          </div>
+        </div>
+
+        <!-- Journal -->
+        <div class="card journal">
+          <div class="title">
+            An Improved K-means Clustering Algorithm Towards Efficient
+            Data-Driven Modeling
+          </div>
+          <div class="abstract">
+            Proposed a method for optimal centroid initialization in K-means,
+            tested on COVID-19, patient datasets and synthetic data.
+          </div>
+          <div class="meta">Journal | Springer Nature (2022)</div>
+          <div class="links">
+            <a
+              href="https://www.researchgate.net/publication/361468419_An_Improved_K-means_Clustering_Algorithm_towards_an_Efficient_Data-Driven_Modeling"
+              target="_blank"
+              >PAPER</a
+            >
+          </div>
+        </div>
+
+        <!-- Conference -->
+        <div class="card conference">
+          <div class="title">
+            TOS: A Relative Metric Approach for Model Selection in Machine
+            Learning Solutions
+          </div>
+          <div class="abstract">
+            Introduced Trade-Off Score (TOS) metric for robust model evaluation
+            on imbalanced datasets.
+          </div>
+          <div class="meta">Conference | IEEE RAAICON 2021</div>
+          <div class="links">
+            <a
+              href="https://doi.org/10.1109/RAAICON54709.2021.9929722"
+              target="_blank"
+              >PAPER</a
+            >
+          </div>
+        </div>
+
+        <!-- Journal -->
+        <div class="card journal">
+          <div class="title">
+            Word Embedding based Textual Semantic Similarity Measure in Bengali
+          </div>
+          <div class="abstract">
+            Compared Word2Vec, GloVe, FastText embeddings for Bengali similarity
+            tasks; FastText achieved highest correlation (77.28%).
+          </div>
+          <div class="meta">Journal | Procedia Computer Science (2021)</div>
+          <div class="links">
+            <a
+              href="https://www.researchgate.net/publication/356399464_Word_Embedding_based_Textual_Semantic_Similarity_Measure_in_Bengali"
+              >PAPER</a
+            >
+          </div>
+        </div>
+
+        <!-- Journal -->
+        <div class="card journal">
+          <div class="title">
+            An Efficient K-means Algorithm for Analysing COVID-19
+          </div>
+          <div class="abstract">
+            Applied optimized K-means to cluster healthcare quality of countries
+            during COVID-19.
+          </div>
+          <div class="meta">Journal | HIS 2020</div>
+          <div class="links">
+            <a
+              href="https://doi.org/10.1007/978-3-030-73050-5_43"
+              target="_blank"
+              >PAPER</a
+            >
+          </div>
+        </div>
+
+        <!-- Conference -->
+        <div class="card conference">
+          <div class="title">
+            Nearest Blood & Plasma Donor Finding: A Machine Learning Approach
+          </div>
+          <div class="abstract">
+            Built clustering-based platform for efficient donor-recipient
+            matching during COVID-19.
+          </div>
+          <div class="meta">Conference | ICCIT 2020</div>
+          <div class="links">
+            <a href="https://doi.org/10.1109/ICCIT51783.2020.9392739">PAPER</a>
+          </div>
+        </div>
+
+        <!-- Conference -->
+        <div class="card conference">
+          <div class="title">
+            BEmoD: Bengali Emotion Dataset for Classifying Expressions of
+            Emotion
+          </div>
+          <div class="abstract">
+            Created dataset of 5200 Bengali texts across six emotions; achieved
+            κ=0.92 agreement among annotators.
+          </div>
+          <div class="meta">Conference | ICO 2020</div>
+          <div class="links">
+            <a
+              href="https://doi.org/10.1007/978-3-030-68154-8_94"
+              target="_blank"
+              >PAPER</a
+            >
+          </div>
+        </div>
+
+        <!-- Conference -->
+        <div class="card conference">
+          <div class="title">
+            Towards POS Tagging Methods for Bengali Language
+          </div>
+          <div class="abstract">
+            Comparative study of stochastic and transformation-based POS tagging
+            methods on Bengali corpus.
+          </div>
+          <div class="meta">Conference | ICO 2020</div>
+          <div class="links">
+            <a
+              href="https://doi.org/10.1007/978-3-030-68154-8_93"
+              target="_blank"
+              >PAPER</a
+            >
+          </div>
+        </div>
+
+        <!-- Conference -->
+        <div class="card conference">
+          <div class="title">
+            A Fully Automatic Transport System with LoRa and Renewable Energy
+            Solution
+          </div>
+          <div class="abstract">
+            Proposed robotic vehicle system for automated transport in
+            institutions using LoRa-based communication.
+          </div>
+          <div class="meta">Conference | IEEE Tensymp 2020</div>
+          <div class="links">
+            <a href="https://doi.org/10.1109/TENSYMP50017.2020.9230750"
+              >PAPER</a
+            >
+          </div>
+        </div>
+
+        <!-- Conference -->
+        <div class="card conference">
+          <div class="title">Airline Scheduling With MAX Flow Algorithm</div>
+          <div class="abstract">
+            Developed algorithm to optimize airline schedules ensuring maximum
+            utilization of flights.
+          </div>
+          <div class="meta">Conference | ICNST 2018</div>
+          <div class="links">
+            <a
+              href="https://www.researchgate.net/publication/331967163_Airline_Scheduling_with_Max_Flow_algorithm"
+              >PAPER</a
+            >
+          </div>
+        </div>
+
+        <!-- Conference -->
+        <div class="card conference">
+          <div class="title">
+            Classification of Tourism Reviews from Bengali Texts using
+            Multinomial Naïve Bayes
+          </div>
+          <div class="abstract">
+            Performed sentiment analysis of Bengali tourism reviews using Naïve
+            Bayes classifier.
+          </div>
+          <div class="meta">Conference | ICCIT 2022</div>
+          <div class="links">
+            <a href="https://doi.org/10.1109/ICCIT57492.2022.10055560">PAPER</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates & Awards Section -->
+    <section id="certificates" class="awards-section">
+      <!-- Main Title -->
+      <div class="section-header">
+        <h1 class="section-title">Accomplishments</h1>
+        <p class="section-intro">
+          Showcasing key achievements, co-curricular experiences, and earned
+          certifications that highlight skills, knowledge, and continuous
+          learning.
+        </p>
+      </div>
+
+      <!-- Achievements Section -->
+      <h2 class="sub-title">Achievements</h2>
+      <div class="achievements-cards">
+        <div class="achievement-card">
+          <div class="year">2019</div>
+          <h3>ITEE – FE Exam</h3>
+          <p>
+            Successfully passed the ITEE – FE Exam 2019, conducted by the
+            Japanese Government, demonstrating strong IT fundamentals and
+            technical proficiency.
+          </p>
+        </div>
+        <div class="achievement-card">
+          <div class="year">2021</div>
+          <h3>ISCEA PTAK Global Case Competition</h3>
+          <p>
+            Awarded a 70% scholarship at the 2021 ISCEA PTAK Prize Global Case
+            Competition for excellence in case-solving and strategic innovation.
+          </p>
+        </div>
+        <div class="achievement-card">
+          <div class="year">2018</div>
+          <h3>CUET CSE Fest</h3>
+          <p>
+            Winner of the Poster Presentation at CUET CSE Fest 2018 for
+            designing and presenting highly innovative and practical computing
+            solutions effectively.
+          </p>
+        </div>
+      </div>
+
+      <!-- Certificates Section -->
+      <h2 class="sub-title">Certificates</h2>
+      <div class="cert-grid">
+        <!-- First 4 visible -->
+        <div class="cert-item">
+          <img
+            src="images/certificate1.png"
+            alt="Certificate1"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>Deep Learning Specialization</h4>
+            <p>
+              Successfully completed the Coursera "Deep Learning"
+              specialization, gaining practical knowledge in building and
+              deploying neural networks with hands-on experience in Python and
+              TensorFlow. This achievement strengthened expertise in applying
+              deep learning to real-world AI challenges.
+            </p>
+            <a href="#" class="verify-link">Verify Credential</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <img
+            src="images/certificate2.png"
+            alt="Certificate2"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>Sequence Models</h4>
+            <p>
+              Successfully completed the "Sequence Models" course under the Deep
+              Learning Specialization by DeepLearning.AI on Coursera, instructed
+              by Andrew Ng. Gained practical expertise in RNNs, LSTMs, GRUs, and
+              sequence-based model applications using Python and TensorFlow.
+            </p>
+            <a href="#" class="verify-link">Verify Credential</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <img
+            src="images/certificate3.png"
+            alt="Certificate3"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>Convolutional Neural Networks</h4>
+            <p>
+              Successfully completed the course "Convolutional Neural Networks"
+              by DeepLearning.AI on Coursera, gaining in-depth knowledge of CNN
+              architectures, image processing techniques, and practical
+              implementation using Python and TensorFlow for advanced deep
+              learning applications.
+            </p>
+            <a href="#" class="verify-link">Verify Credential</a>
+          </div>
+        </div>
+
+        <div class="cert-item">
+          <img
+            src="images/certificate4.png"
+            alt="Certificate4"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>Structuring ML Projects</h4>
+            <p>
+              Successfully completed the course "Structuring Machine Learning
+              Projects" which provided structured approaches to organizing and
+              managing machine learning projects effectively. The course
+              emphasizes error analysis, prioritization, and iterative
+              improvement strategies crucial for building robust AI systems.
+            </p>
+            <a href="#" class="verify-link">Verify Credential</a>
+          </div>
+        </div>
+
+        <!-- Hidden certificates -->
+        <div class="cert-item hidden">
+          <img
+            src="images/certificate5.png"
+            alt="Certificate5"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>Improving Deep Neural Networks</h4>
+            <p>
+              Successfully completed the course "Improving Deep Neural Networks:
+              Hyperparameter Tuning, Regularization, and Optimization" from
+              DeepLearning.AI, focusing on advanced techniques to enhance model
+              performance and efficiency for real-world deep learning
+              applications.
+            </p>
+            <a href="#" class="verify-link">Verify Credential</a>
+          </div>
+        </div>
+
+        <div class="cert-item hidden">
+          <img
+            src="images/certificate6.png"
+            alt="Certificate6"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>Neural Networks & Deep Learning</h4>
+            <p>
+              Successfully completed the course "Neural Networks and Deep
+              Learning" from DeepLearning.AI, covering foundational concepts of
+              deep learning, forward/backpropagation, and practical applications
+              of neural networks in modern artificial intelligence driven
+              systems.
+            </p>
+            <a href="#" class="verify-link">Verify Credential</a>
+          </div>
+        </div>
+
+        <div class="cert-item hidden">
+          <img
+            src="images/certificate7.png"
+            alt="Certificate7"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>Machine Learning with Python</h4>
+            <p>
+              Successfully completed the "Machine Learning with Python" course
+              offered by IBM on Coursera. This certification demonstrates
+              practical skills in applying Python to machine learning
+              techniques, covering supervised and unsupervised learning, model
+              evaluation, and real-world data applications.
+            </p>
+            <a
+              href="https://coursera.org/verify/UHBYAGS74WUR"
+              target="_blank"
+              class="verify-link"
+              >Verify Credential</a
+            >
+          </div>
+        </div>
+
+        <div class="cert-item hidden">
+          <img
+            src="images/certificate8.png"
+            alt="Certificate8"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>CNSS Network Security Specialist</h4>
+            <p>
+              Successfully completed the "Certified Network Security Specialist"
+              (CNSS) course by the International CyberSecurity Institute (ICSI).
+              This certification highlights knowledge in network security
+              fundamentals, cyber threat defense, and practical approaches to
+              securing digital infrastructure.
+            </p>
+            <a
+              href="https://www.credential.net/c9ca4d62-be5a-4361-bae0-242512e37b05#acc.VBCsO2Qz"
+              target="_blank"
+              class="verify-link"
+              >Verify Credential</a
+            >
+          </div>
+        </div>
+
+        <div class="cert-item hidden">
+          <img
+            src="images/certificate9.png"
+            alt="Certificate9"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>System Admin & IT Services</h4>
+            <p>
+              Successfully completed the Google course on "System Administration
+              and IT Infrastructure Services" through Coursera. Developed
+              knowledge and practical skills in managing IT infrastructure,
+              system administration, networking, troubleshooting, and supporting
+              reliable IT operations.
+            </p>
+            <a
+              href="https://coursera.org/verify/S6Y9TPRR6H4X"
+              target="_blank"
+              class="verify-link"
+              >Verify Credential</a
+            >
+          </div>
+        </div>
+
+        <div class="cert-item hidden">
+          <img
+            src="images/certificate10.png"
+            alt="Certificate10"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>Bits & Bytes of Networking</h4>
+            <p>
+              Successfully completed the course "Bits and Bytes of Computer
+              Networking" demonstrating foundational knowledge of networking
+              concepts, protocols, and infrastructure, essential for
+              understanding the operation of computer networks and their
+              practical implementation in real-world systems.
+            </p>
+            <a
+              href="https://coursera.org/verify/UXR34VBD28TC"
+              target="_blank"
+              class="verify-link"
+              >Verify Credential</a
+            >
+          </div>
+        </div>
+
+        <div class="cert-item hidden">
+          <img
+            src="images/certificate11.png"
+            alt="Certificate11"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>Technical Support Fundamentals</h4>
+            <p>
+              Successfully completed the "Technical Support Fundamentals" course
+              by Google on Coursera, gaining skills in IT support,
+              troubleshooting, customer service, and foundational knowledge of
+              operating systems, networking, system administration, and security
+              best practices for entry-level IT roles.
+            </p>
+            <a
+              href="https://coursera.org/verify/R7WN4FJ7BVNV"
+              target="_blank"
+              class="verify-link"
+              >Verify Credential</a
+            >
+          </div>
+        </div>
+
+        <div class="cert-item hidden">
+          <img
+            src="images/certificate12.png"
+            alt="Certificate12"
+            class="cert-img"
+          />
+          <div class="cert-card">
+            <h4>Machine Learning</h4>
+            <p>
+              Successfully completed the "Machine Learning" course on Coursera,
+              focusing on core concepts and practical applications, including
+              supervised and unsupervised learning, model evaluation best
+              practices, advanced optimization techniques, and strategies for
+              building scalable and effective AI systems.
+            </p>
+            <a
+              href="https://coursera.org/verify/QFXLEV2JBNPQ"
+              target="_blank"
+              class="verify-link"
+              >Verify Credential</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- View More Button -->
+      <div class="btn-container">
+        <button class="view-more-btn">View More</button>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-section">
+      <!-- Left Side: Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><span>Email:</span> asifiqbalsagor123@gmail.com</p>
+        <p><span>Phone:</span> +8801862-444958</p>
+        <p>
+          <span>Address:</span><br />
+          Chittagong University of Engineering and Technology (CUET),<br />
+          Chittagong, Bangladesh
+        </p>
+        <div class="social-icons">
+          <a href="mailto:asifiqbalsagor123@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="https://github.com/iamasifiqbal" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/md-asif-iqbal-9a7b8a176/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.researchgate.net/profile/Asif-Iqbal-44"
+            target="_blank"
+            ><i class="fab fa-researchgate"></i
+          ></a>
+          <a
+            href="https://scholar.google.com/citations?user=pQV9F7IAAAAJ&hl=en"
+            target="_blank"
+            ><i class="fas fa-graduation-cap"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Right Side: Form -->
+      <div class="contact-form">
+        <form>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Your full name" />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Your email address" />
+
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write something..."></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <small
+          >©️ <span id="year"></span> Md Asif Iqbal — All rights
+          reserved.</small
+        >
+      </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="script.js"></script>
